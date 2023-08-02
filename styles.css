@@ -1,3 +1,127 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('fonts/leaguespartan-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lekton';
+    src: url('fonts/Lekton-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+  background-color: #00171F;
+}
+
+.media-container {
+  background-color: grey;
+}
+
+.title {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
+  margin: 4px;
+  font-size: 60px;
+  font-family: "League Spartan", Arial, sans-serif;
+  color: #00FFC5;
+}
+
+h2 {
+  margin: 4px;
+  font-size: 15px;
+  font-family: "League Spartan", Arial, sans-serif;
+  color: #00FFC5;
+  font-style: italic;
+}
+
+h3 {
+  margin: 4px;
+  font-size: 18px;
+  font-family: "League Spartan", Arial, sans-serif;
+  color: #00FFC5;
+}
+
+p1 {
+  margin: 4px;
   font-size: 20px;
+  font-family: "Lekton", Arial, sans-serif;
+  color: #00FFC5;
+}
+
+a {
+  margin: 4px;
+  font-size: 18px;
+  font-family: "League Spartan", Arial, sans-serif;
+  color: #00FFC5;
+}
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover {
+  text-decoration: none;
+  color: #3185FC;
+}
+
+a:active { text-decoration: none; }
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+}
+
+.switch {
+  margin: auto;
+  width: 50%;
+  background-color: white;
+}
+
+.switch-btn {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  font-family: "League Spartan", Arial, sans-serif;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00FFC5;
+  text-align: center;
+  cursor: pointer;
+}
+
+#switch-left {
+  border-radius: 10px 0px 0px 10px;
+  background-color: #00171F;
+  color: #00FFC5;
+}
+
+#switch-right {
+  border-radius: 0px 10px 10px 0px;
+  background-color: #00171F;
+  color: #00FFC5;
+}
+
+#switch-left.active {
+  background-color: #00FFC5;
+  color: #00171F;
+}
+
+#switch-right.active {
+  background-color: #00FFC5;
+  color: #00171F;
 }
