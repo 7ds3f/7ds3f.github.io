@@ -129,7 +129,7 @@ a:active { text-decoration: none; }
 }
 
 .page-title {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 20px;
   padding-left: 20px;
   display: flex;
@@ -499,12 +499,14 @@ a:active { text-decoration: none; }
 }
 
 .img-wrapper {
+  position: relative;
   margin: auto;
   max-width: 100%;
   padding: 5px;
 }
 
 .gallery-img-wrapper {
+  position: relative;
   margin: auto;
   max-width: 100%;
   padding: 5px;
@@ -647,7 +649,7 @@ a:active { text-decoration: none; }
   padding-top: 5px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-aspect-ratio: 9/16) {
   .column {
     flex-basis: 100%; /* Change the flex-basis to 100% to make items stack vertically */
   }
