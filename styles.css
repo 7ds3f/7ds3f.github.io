@@ -649,7 +649,7 @@ a:active { text-decoration: none; }
   padding-top: 5px;
 }
 
-@media screen and (max-aspect-ratio: 9/16) {
+@media screen and (max-aspect-ratio: 9/19) {
   .column {
     flex-basis: 100%; /* Change the flex-basis to 100% to make items stack vertically */
   }
