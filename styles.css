@@ -16,16 +16,6 @@ body {
   background-color: #00171F;
 }
 
-.media-container {
-  background-color: grey;
-}
-
-.title {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
 h1 {
   margin: 4px;
   font-size: 60px;
@@ -35,7 +25,7 @@ h1 {
 
 h2 {
   margin: 4px;
-  font-size: 15px;
+  font-size: 25px;
   font-family: "League Spartan", Arial, sans-serif;
   color: #00FFC5;
   font-style: italic;
@@ -49,15 +39,27 @@ h3 {
 }
 
 p1 {
-  margin: 4px;
   font-size: 20px;
   font-family: "Lekton", Arial, sans-serif;
   color: #00FFC5;
 }
 
+p2 {
+  font-size: 15px;
+  font-family: "Lekton", Arial, sans-serif;
+  color: #00FFC5;
+}
+
+p3 {
+  font-size: 20px;
+  color: #00FFC5;
+  font-family: "League Spartan", Arial, sans-serif;
+  text-indent: 0;
+}
+
 a {
   margin: 4px;
-  font-size: 18px;
+  font-size: 25px;
   font-family: "League Spartan", Arial, sans-serif;
   color: #00FFC5;
 }
@@ -73,12 +75,12 @@ a:hover {
 
 a:active { text-decoration: none; }
 
-.center {
+.home-center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px;
+  padding: 20px;
 }
 
 #links {
@@ -86,22 +88,627 @@ a:active { text-decoration: none; }
   flex-direction: column;
 }
 
+.socials-icons {
+  text-align: center;
+}
+
+.socials-icons .fa {
+  font-size: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.page-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #00171F;
+  color: white;
+  text-align: right;
+}
+
+.page-footer p1 {
+  font-size: 15px;
+  padding: 5px;
+}
+
+.page-header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  background-color: #00171F;
+  z-index: 100;
+  padding: 10px;
+}
+
+.page-header a {
+  font-size: 20px;
+}
+
+.page-title {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-center {
+  margin: auto;
+  width: 75%;
+}
+
+.media-container {
+}
+
+.media-display {
+  width: 95%;
+  margin: auto;
+}
+
+.divider-container {
+  margin: auto;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.media-divider {
+  width: 10%;
+  height: 5px;
+  background-color: #00FFC5;
+  margin: auto;
+}
+
+.active, .collapsible:hover {
+  background-color: #00171F;
+}
+
+.code-showcase {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+}
+
+.code-showcase img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00FFC5;
+  border-radius: 10px;
+  max-width: 100%;
+  z-index: 10;
+}
+
+.design-showcase {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+}
+
+.design-showcase img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00FFC5;
+  border-radius: 10px;
+  width: 100%;
+  z-index: 10;
+}
+
+.design-showcase video {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00FFC5;
+  border-radius: 10px;
+  width: 100%;
+  z-index: 10;
+}
+
+.gallery-showcase {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+}
+
+.gallery-showcase img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.gallery-showcase img:hover {
+}
+
+.info-showcase {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+}
+
+.info-showcase img {
+  width: 100%;
+  z-index: 10;
+}
+
+.ack-showcase {
+  margin: auto;
+  width: 90%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #F0A211;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.ack-showcase-mini {
+  margin: auto;
+  width: 100%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #F0A211;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.ack-showcase h1 {
+  font-size: 25px;
+  color: #F0A211;
+}
+
+.ack-showcase p1 {
+  color: #F0A211;
+}
+
+.project-container {
+  border-radius: 0px 0px 10px 10px;
+  border-image: linear-gradient(to bottom, #00FFC5, #00171F 50%) 1;
+  border-style: none solid solid solid;
+  border-width: 5px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.gallery-container {
+  border-radius: 0px 0px 10px 10px;
+  border-image: linear-gradient(to bottom, #00FFC5, #00171F 50%) 1;
+  border-style: none solid solid solid;
+  border-width: 5px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.collapsible {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #00FFC5;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #00171F;
+  margin: auto;
+  font-family: "League Spartan", Arial, sans-serif;
+  color: #00FFC5;
+  font-style: italic;
+  min-height: 300px;
+  cursor: pointer;
+  overflow: scroll;
+}
+
+.gallery-collapsible {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #00FFC5;
+  border-radius: 10px 10px 10px 10px;
+  width: 100%;
+  background-color: #00171F;
+  margin: auto;
+  font-family: "League Spartan", Arial, sans-serif;
+  color: #00FFC5;
+  font-style: italic;
+  min-height: 200px;
+  cursor: pointer;
+  overflow: scroll;
+}
+
+.collapsible:after {
+  content: "+";
+  font-size: 50px;
+  font-style: normal;
+  float: left;
+  margin-left: 10px;
+  color: #00FFC5;
+}
+
+.collapsible.active:after {
+  content: "-";
+  color: #3185FC;
+}
+
+.gallery-collapsible:after {
+  content: "+";
+  font-size: 50px;
+  font-style: normal;
+  float: left;
+  margin-left: 10px;
+  color: #00FFC5;
+}
+
+.gallery-collapsible.active:after {
+  content: "-";
+  color: #3185FC;
+}
+
+#gallery-button-favorites {
+  border-radius: 10px 10px 0px 0px;
+}
+
+#gallery-button-favorites:after {
+  content: "-";
+  color: #3185FC;
+}
+
+#gallery-button-favorites.active:after {
+  content: "+";
+  color: #00FFC5;
+}
+
+.gallery-collapsible .button-text {
+  font-size: 70px;
+}
+
+#interactive-data-viz {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/code/interactive-data-viz/genre-viz.png") no-repeat left center;
+  background-size: cover;
+}
+
+#spotify-bot {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/code/interactive-data-viz/genre-viz.png") no-repeat left center;
+  background-size: cover;
+}
+
+#n-queen-solver {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/code/interactive-data-viz/genre-viz.png") no-repeat left center;
+  background-size: cover;
+}
+
+#rpi-campus-map {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/code/interactive-data-viz/genre-viz.png") no-repeat left center;
+  background-size: cover;
+}
+
+#tcp-wordle-server {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/code/interactive-data-viz/genre-viz.png") no-repeat left center;
+  background-size: cover;
+}
+
+#my-website {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/code/interactive-data-viz/genre-viz.png") no-repeat left center;
+  background-size: cover;
+}
+
+#darth-croft {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/3d/project-details/darth-croft/darth-croft-cover.jpg") no-repeat left center;
+  background-size: cover;
+}
+
+#window {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/3d/project-details/window/window-cover.jpg") no-repeat left center;
+  background-size: cover;
+}
+
+#kara {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/3d/project-details/kara/kara-cover.jpg") no-repeat left center;
+  background-size: cover;
+}
+
+#guitar-ad {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/3d/project-details/guitar-ad/guitar-ad-cover.jpg") no-repeat left center;
+  background-size: cover;
+}
+
+#house {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/3d/project-details/house/house-cover.jpg") no-repeat left center;
+  background-size: cover;
+}
+
+#gallery-button-favorites {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/3d/favorites/eve-cover.jpg") no-repeat left center;
+  background-size: cover;
+}
+
+#gallery-button-2023 {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/3d/2023/guitar-water-cover.jpg") no-repeat left center;
+  background-size: cover;
+}
+
+#gallery-button-2022 {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/3d/2022/supercharger-cover.jpg") no-repeat left center;
+  background-size: cover;
+}
+
+#gallery-button-old {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/3d/old/air-balloon-cover.jpg") no-repeat left center;
+  background-size: cover;
+}
+
+.project-info-container {
+  padding: 25px;
+  max-width: 150px;
+  margin-left: auto;
+}
+
+.project-info {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00FFC5;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Lekton", Arial, sans-serif;
+  font-style: normal;
+  color: #00FFC5;
+  padding: 5px;
+}
+
+.button-text-container {
+  padding: 20px;
+  max-width: 70%;
+  margin-left: auto;
+}
+
+.button-text {
+  z-index: 1;
+  color: white;
+  font-size: 40px;
+  text-align: right; /* Align the button text to the right */
+  color: #00FFC5;
+  margin-left: auto;
+  min-height: 100%;
+}
+
+.img-wrapper {
+  margin: auto;
+  max-width: 100%;
+  padding: 5px;
+}
+
+.gallery-img-wrapper {
+  margin: auto;
+  max-width: 100%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.gallery-img-wrapper:hover {
+}
+
+.learn-more-icon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.learn-more-icon p1 {
+  color: #3185FC
+}
+
+.image-details-mini {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image-details-mini p1 {
+  font-size: 30px;
+  color: #3185FC;
+}
+
+.image-details-mini h1 {
+  font-size: 30px;
+  color: #3185FC;
+}
+
+.image-details-mini a {
+  color: #F0A211;
+}
+
+.ack-showcase-mini h1 {
+  font-size: 20px;
+  color: #F0A211;
+}
+
+.ack-showcase-mini p1 {
+  font-size: 15px;
+  color: #F0A211;
+}
+
+.image-details-mini .media-divider {
+  background-color: #3185FC;
+}
+
+.description-text {
+  max-width: 90%;
+  margin: auto;
+}
+
+.info-text {
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.info-showcase .description-text {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #00FFC5;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.info-showcase .info-text {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #00FFC5;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.description-text a {
+  font-size: 20px;
+}
+
+.info-text a {
+  font-size: 20px;
+}
+
+.code-text {
+  width: 100%;
+  margin: auto;
+}
+
+.title-text {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.subtitle-text-center {
+  margin: auto;
+  text-align: center;
+}
+
+.subtitle-text-left {
+}
+
+.subtitle-text-center p1 {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.subtitle-text-left p1 {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.column {
+  flex-basis: 50%;
+}
+
+.code-showcase .row {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex-basis: 100%; /* Change the flex-basis to 100% to make items stack vertically */
+  }
+  .info-text {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .description-text {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.code-border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00FFC5;
+  width: fit-content;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.source-border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00FFC5;
+  border-radius: 10px;
+  max-height: 300px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.source-border:hover {
+  border-color: #3185FC;
+}
+
 .switch {
   margin: auto;
-  width: 50%;
-  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  padding-bottom: 20px;
 }
 
 .switch-btn {
   background-color: rgba(0, 0, 0, 0);
-  padding: 16px;
+  padding: 20px;
   font-size: 16px;
   font-family: "League Spartan", Arial, sans-serif;
   border-style: solid;
-  border-width: 1px;
+  border-width: 5px;
   border-color: #00FFC5;
   text-align: center;
   cursor: pointer;
+}
+
+.switch-btn:hover {
+  border-color: #3185FC;
 }
 
 #switch-left {
@@ -125,3 +732,56 @@ a:active { text-decoration: none; }
   background-color: #00FFC5;
   color: #00171F;
 }
+
+code[class*="language-"] {
+  text-shadow: none;
+}
+
+pre[class*="language-"] {
+  border-radius: 0px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  overflow-y: hidden;
+}
+
+pre[class*="language-"].line-numbers {
+	position: relative;
+	padding: 0em;
+	counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+	position: relative;
+	white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-numbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+	.line-numbers-rows > span {
+		display: block;
+		counter-increment: linenumber;
+	}
+
+		.line-numbers-rows > span:before {
+			content: counter(linenumber);
+			color: #999;
+			display: block;
+			padding-right: 0.8em;
+			text-align: right;
+		}
