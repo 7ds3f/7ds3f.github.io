@@ -129,16 +129,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //image states
     var selected = {
-      "filter": "opacity(15%)",
+      "filter": "opacity(0.15)",
       //"filter": "sepia(100%)",
-      "-webkit-filter": "opacity(15%)",
+      "-webkit-filter": "opacity(0.15)",
       //"-webkit-filter": "sepia(100%)"
     };
 
     var deselected = {
-      "filter": "opacity(100%)",
+      "filter": "opacity(1)",
       //"filter": "sepia(0%)",
-      "-webkit-filter": "opacity(100%)",
+      "-webkit-filter": "opacity(1)",
       //"-webkit-filter": "sepia(0%)"
     };
 
