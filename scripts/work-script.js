@@ -110,7 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //gallery image handler
   document.querySelectorAll(".gallery-img-wrapper").forEach(item => {
-    item.style.filter = "blur(0px) brightness(100%)";
     //access image div
     var image = item.children[0];
     //access image info icon
@@ -128,27 +127,33 @@ document.addEventListener("DOMContentLoaded", () => {
       infoIcon.style.display = "none";
     })
 
+    //image states
+    var selected = {
+      "filter": "opacity(15%)",
+      //"filter": "sepia(100%)",
+      "-webkit-filter": "opacity(15%)",
+      //"-webkit-filter": "sepia(100%)"
+    };
+
+    var deselected = {
+      "filter": "opacity(100%)",
+      //"filter": "sepia(0%)",
+      "-webkit-filter": "opacity(100%)",
+      //"-webkit-filter": "sepia(0%)"
+    };
+
     //show image details
-    image.style.filter = "opacity(100%) sepia(0%)";
+    Object.assign(image.style, deselected);
     imageDetails.style.display = "none";
     item.addEventListener('click', event => {
       if (imageDetails.style.display === "none") {
         imageDetails.style.display = "block";
-        image.style.filter = "opacity(15%) sepia(100%)";
+        Object.assign(image.style, selected);
       }
       else {
         imageDetails.style.display = "none";
-        image.style.filter = "opacity(100%) sepia(0%)";
+        Object.assign(image.style, deselected);
       }
     })
-
-    /*
-    item.addEventListener('mouseout', event => {
-      if (imageDetails.style.display === "block") {
-        imageDetails.style.display = "none";
-        image.style.filter = "opacity(100%) sepia(0%)";
-      }
-    })
-    */
   })
 });

@@ -356,7 +356,7 @@ a:active { text-decoration: none; }
 }
 
 .gallery-collapsible .button-text {
-  font-size: 70px;
+  font-size: 400%;
 }
 
 #interactive-data-viz {
@@ -491,7 +491,7 @@ a:active { text-decoration: none; }
 .button-text {
   z-index: 1;
   color: white;
-  font-size: 40px;
+  font-size: 300%;
   text-align: right; /* Align the button text to the right */
   color: #00FFC5;
   margin-left: auto;
