@@ -67,7 +67,7 @@
           </div>
           <div class="row">
             <div class="img-wrapper">
-              <img src="media/code/interactive-data-viz/website-home.png" loading="lazy"/>
+              <img src="media/code/interactive-data-viz/interactive-data-viz-website-home.jpg" loading="lazy"/>
             </div>
           </div>
           <div class="row">
@@ -77,8 +77,13 @@
           </div>
           <div class="row">
             <div class="img-wrapper">
-              <img src="media/code/interactive-data-viz/website-viz.png" loading="lazy"/>
+              <img src="media/code/interactive-data-viz/interactive-data-viz-website-viz.jpg" loading="lazy"/>
             </div>
+          </div>
+          <div class="row">
+              <div class="description-text">
+                <p1>Both of these charts use the chart.js library.</p1>
+              </div>
           </div>
           <div class="row">
             <div class="subtitle-text-center">
@@ -87,7 +92,7 @@
           </div>
           <div class="row">
             <div class="img-wrapper">
-              <img src="media/code/interactive-data-viz/genre-viz.png" loading="lazy"/>
+              <img src="media/code/interactive-data-viz/interactive-data-viz-genre-viz.jpg" loading="lazy"/>
             </div>
           </div>
           <div class="row">
@@ -109,7 +114,7 @@
           </div>
           <div class="row">
             <div class="img-wrapper">
-              <img src="media/code/interactive-data-viz/cost-viz.png" loading="lazy"/>
+              <img src="media/code/interactive-data-viz/interactive-data-viz-cost-viz.jpg" loading="lazy"/>
             </div>
           </div>
           <div class="row">
@@ -136,27 +141,48 @@
             <div class="project-info">Python</div>
           </div>
           <div class="button-text-container">
-            <div class="button-text">Autonomous Spotify Playlist Manager</div>
+            <div class="button-text">Greyscale Spotify Playlist Generator</div>
           </div>
         </button>
         <div id="spotify-bot-cont" class="project-container" hidden>
           <div class="row">
               <div class="description-text">
-                <p1>This was a personal project with the goal being to create a more interactive, customizable
-                alternative to Spotify's auto-generated playlists like Discovery Weekly and the Daily Mixes.</p1>
+                <p1>This was a personal project with the goal being to learn how to use the Spotify API and to create a customizable
+                alternative to Spotify's auto-generated playlists like Discovery Weekly and the Daily Mixes. Given a list of genres and
+                artists of the user's choosing, this program will populate a playlist with Spotify's recommedation system. The program
+                will add a song only if:
+                (1) its album cover is greyscale, and (2) if it has the appropriate energy level based on the time of day. Spotify
+                generates an "energy" level for every song in its catalog, and this program will add songs with lower "energy" in the morning
+                and songs with higher "energy" in the afternoon/at night. "Energy" represents "a perceptual measure of intensity and activity",
+                according to Spotify's documentation. If the program detects that three iterations have passed without having found any songs
+                that meet this criteria, the program will choose different artists and genres from the given lists for Spotify's recommedation
+                function.</p1>
               </div>
           </div>
           <div class="row">
             <div class="column">
+              <div class="subtitle-text-left">
+                <p1>Terminal Output</p1>
+              </div>
               <div class="img-wrapper">
-                <img src="media/placeholder.jpg" loading="lazy"/>
+                <img src="media/code/spotify-bot/spotify-bot-terminal.jpg" loading="lazy"/>
               </div>
             </div>
             <div class="column">
+              <div class="subtitle-text-left">
+                <p1>Spotify Playlist</p1>
+              </div>
               <div class="img-wrapper">
-                <img src="media/placeholder.jpg" loading="lazy"/>
+                <img src="media/code/spotify-bot/spotify-bot-spotify.jpg" loading="lazy"/>
               </div>
             </div>
+          </div>
+          <div class="row">
+              <div class="description-text">
+                <p1>To determine if an album cover is greyscale, I used the Pillow Python library for image analysis. Using the Spotify API,
+                a song's album cover is downloaded. After it is reduced to a lower resolution, the Pillow libary analyzes the color bands of the
+                album cover to determine if it is greyscale.</p1>
+              </div>
           </div>
           <div class="row">
             <div class="subtitle-text-left">
@@ -245,7 +271,7 @@
             <div class="project-info">HTML, CSS, JS</div>
           </div>
           <div class="button-text-container">
-            <div class="button-text">willbordman.com</div>
+            <div class="button-text">This Website</div>
           </div>
         </button>
         <div id="my-website-cont" class="project-container" hidden>
@@ -1511,7 +1537,7 @@
               <div class="subtitle-text-left">
                 <p1>Final Animation</p1>
               </div>
-              <video poster="media/3d/project-details/guitar-ad/video-poster.jpg" control loop src="https://res.cloudinary.com/dn0mwj8ow/video/upload/v1691981172/3D%20art%20for%20Blender/guitar-ad2_ieudiz.mp4" controls class = "video"/>
+              <video preload="none" poster="media/3d/project-details/guitar-ad/video-poster.jpg" control loop src="https://res.cloudinary.com/dn0mwj8ow/video/upload/v1691981172/3D%20art%20for%20Blender/guitar-ad2_ieudiz.mp4" controls class = "video"/>
             </div>
           </div>
           <div class="row">
@@ -1529,7 +1555,7 @@
               <p1>Blender Workspace</p1>
             </div>
             <div class="img-wrapper">
-              <img src="media/3d/project-details/guitar-ad/guitar-ad-5.jpg" loading="lazy"/>
+              <img src="media/3d/project-details/guitar-ad/guitar-ad-workspace-1.jpg" loading="lazy"/>
             </div>
           </div>
           <div class="divider-container">
@@ -1584,7 +1610,7 @@
               <p1>Final Animation</p1>
             </div>
             <div class="img-wrapper">
-              <video poster="media/3d/project-details/darth-croft/video-poster.jpg" control loop src="https://res.cloudinary.com/dn0mwj8ow/video/upload/v1690445484/3D%20art%20for%20Blender/darth-croft_uadwox.mp4" controls class = "video"/>
+              <video preload="none" poster="media/3d/project-details/darth-croft/video-poster.jpg" control loop src="https://res.cloudinary.com/dn0mwj8ow/video/upload/v1690445484/3D%20art%20for%20Blender/darth-croft_uadwox.mp4" controls class = "video"/>
             </div>
           </div>
           <div class="row">
@@ -1660,7 +1686,15 @@
               <p1>Final Animation</p1>
             </div>
             <div class="img-wrapper">
-              <video control loop src="https://res.cloudinary.com/dn0mwj8ow/video/upload/v1690169194/3D%20art%20for%20Blender/video_aksvpb.mp4" controls class = "video">
+              <video preload="none" poster="media/3d/project-details/kara/video-poster.jpg" control loop src="https://res.cloudinary.com/dn0mwj8ow/video/upload/v1690169194/3D%20art%20for%20Blender/video_aksvpb.mp4" controls class = "video">
+            </div>
+          </div>
+          <div class="row">
+            <div class="subtitle-text-left">
+              <p1>Blender Workspace</p1>
+            </div>
+            <div class="img-wrapper">
+              <img src="media/3d/project-details/kara/kara-workspace-1.jpg" loading="lazy"/>
             </div>
           </div>
           <div class="divider-container">
