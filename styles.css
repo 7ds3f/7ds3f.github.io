@@ -17,11 +17,11 @@ body {
 }
 
 #index-page-body {
-  background-image: url("background.png");
+  background-image: url("media/background.png");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: top;
-  background-blend-mode: soft-light;
+  background-blend-mode: overlay;
 }
 
 h1 {
@@ -395,28 +395,28 @@ a:active { text-decoration: none; }
 #n-queen-solver {
   background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
     linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
-    url("media/code/interactive-data-viz/genre-viz.png") no-repeat left center;
+    url("media/code/n-queens/n-queens-cover.jpg") no-repeat left center;
   background-size: cover;
 }
 
 #rpi-campus-map {
   background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
     linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
-    url("media/code/interactive-data-viz/genre-viz.png") no-repeat left center;
+    url("media/code/rpi-campus-map/rpi-campus-map-cover.jpg") no-repeat left center;
   background-size: cover;
 }
 
 #tcp-wordle-server {
   background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
     linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
-    url("media/code/interactive-data-viz/genre-viz.png") no-repeat left center;
+    url("media/code/tcp-wordle-server/tcp-wordle-server-cover.jpg") no-repeat left center;
   background-size: cover;
 }
 
 #my-website {
   background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
     linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
-    url("media/code/interactive-data-viz/genre-viz.png") no-repeat left center;
+    url("media/background.png") no-repeat left center;
   background-size: cover;
 }
 
@@ -668,7 +668,7 @@ a:active { text-decoration: none; }
   padding-top: 5px;
 }
 
-@media screen and (max-aspect-ratio: 16/9) {
+@media screen and (max-aspect-ratio: 9/16) {
   .column {
     flex-basis: 100%; /* Change the flex-basis to 100% to make items stack vertically */
   }

@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="scripts/prism.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="scripts/jquery-3.7.0.min.js"></script>
   <script src="scripts/work-script.js"></script>
   <link rel="shortcut icon" type="image/png" href="favicon.png">
@@ -97,14 +98,7 @@
           </div>
           <div class="row">
             <div class="subtitle-text-left">
-              <p1>Source (HTML, CSS, JS)</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="source-border">
-              <div class="code-text">
-                <pre data-src="https://raw.githubusercontent.com/7ds3f/7ds3f.github.io/main/placeholder.html"></pre>
-              </div>
+              <p1>< View source <a target="_blank" rel="noopener noreferrer" HREF="https://github.com/7ds3f/genre-viz">HERE.</a> ></p1>
             </div>
           </div>
           <div class="row">
@@ -119,14 +113,7 @@
           </div>
           <div class="row">
             <div class="subtitle-text-left">
-              <p1>Source (HTML, CSS, JS)</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="source-border">
-              <div class="code-text">
-                <pre data-src="https://raw.githubusercontent.com/7ds3f/7ds3f.github.io/main/placeholder.html"></pre>
-              </div>
+              <p1>< View source <a target="_blank" rel="noopener noreferrer" HREF="https://github.com/7ds3f/cost-viz">HERE.</a> ></p1>
             </div>
           </div>
           <div class="divider-container">
@@ -141,7 +128,7 @@
             <div class="project-info">Python</div>
           </div>
           <div class="button-text-container">
-            <div class="button-text">Greyscale Spotify Playlist Generator</div>
+            <div class="button-text">Grayscale Spotify Playlist Generator</div>
           </div>
         </button>
         <div id="spotify-bot-cont" class="project-container" hidden>
@@ -150,13 +137,12 @@
                 <p1>This was a personal project with the goal being to learn how to use the Spotify API and to create a customizable
                 alternative to Spotify's auto-generated playlists like Discovery Weekly and the Daily Mixes. Given a list of genres and
                 artists of the user's choosing, this program will populate a playlist with Spotify's recommedation system. The program
-                will add a song only if:
-                (1) its album cover is greyscale, and (2) if it has the appropriate energy level based on the time of day. Spotify
-                generates an "energy" level for every song in its catalog, and this program will add songs with lower "energy" in the morning
+                will add a song only if: (1) its album cover is greyscale, and (2) if it has the appropriate energy level based on the time of day.
+                Spotify generates an "energy" level for every song in its catalog, and this program will add songs with lower "energy" in the morning
                 and songs with higher "energy" in the afternoon/at night. "Energy" represents "a perceptual measure of intensity and activity",
                 according to Spotify's documentation. If the program detects that three iterations have passed without having found any songs
                 that meet this criteria, the program will choose different artists and genres from the given lists for Spotify's recommedation
-                function.</p1>
+                function and raise the required "energy" value cutoffs. I used the Spotipy Python library to access the functions of the Spotify API.</p1>
               </div>
           </div>
           <div class="row">
@@ -178,21 +164,45 @@
             </div>
           </div>
           <div class="row">
+            <div class="subtitle-text-left">
+              <p1>< View source <a target="_blank" rel="noopener noreferrer" HREF="https://github.com/7ds3f/grayscale-pl-gen">HERE.</a> ></p1>
+            </div>
+          </div>
+          <div class="row">
               <div class="description-text">
                 <p1>To determine if an album cover is greyscale, I used the Pillow Python library for image analysis. Using the Spotify API,
                 a song's album cover is downloaded. After it is reduced to a lower resolution, the Pillow libary analyzes the color bands of the
-                album cover to determine if it is greyscale.</p1>
+                album cover to determine if it is greyscale. The code for some of this analysis is from Stack Exchange. See the code below
+                for acknowledgements.</p1>
               </div>
           </div>
           <div class="row">
             <div class="subtitle-text-left">
-              <p1>Source (Python)</p1>
+              <p1>detect_color_image Function</p1>
             </div>
           </div>
           <div class="row">
             <div class="source-border">
               <div class="code-text">
-                <pre data-src="https://raw.githubusercontent.com/7ds3f/7ds3f.github.io/main/placeholder.html"></pre>
+                <pre data-src="https://raw.githubusercontent.com/7ds3f/grayscale-pl-gen/main/image_bw.py"></pre>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="description-text">
+                <p1>Below is the vibe_check function that determines the "energy" values of tracks with Spotify's API's audio
+                features function.</p1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="subtitle-text-left">
+              <p1>vibe_check Function</p1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="source-border">
+              <div class="code-text">
+                <pre data-src="https://raw.githubusercontent.com/7ds3f/grayscale-pl-gen/main/main.py" data-range="60,80"></pre>
               </div>
             </div>
           </div>
@@ -208,14 +218,48 @@
             <div class="project-info">C</div>
           </div>
           <div class="button-text-container">
-            <div class="button-text">N-Queen Solver</div>
+            <div class="button-text">N-Queens Solver</div>
           </div>
         </button>
         <div id="n-queen-solver-cont" class="project-container" hidden>
           <div class="row">
               <div class="description-text">
-                <p1>(Coming Soon)</p1>
+                <p1>This was a homework assignment I completed for RPI's Operating Systems course (CSCI 4210).
+                The assignment was to write a multi-process solution to a variation of the n-Queens problem. Given
+                a board of size m x n, this program will report the number of solutions to the n-Queens problem for
+                that specific board. This solution uses a brute force approach with backtracking: fork() is called and
+                a new process is created for every potential queen placement. Read more about the n-Queens problem
+                <a target="_blank" rel="noopener noreferrer" HREF="https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/#">HERE.</a>
+                The program can also be compiled with two different precompiler flags. If compiled with the "QUIET" flag,
+                the program displays only the first two lines and the final line of output in the top-level parent process.
+                If compiled with the "NO_PARALLEL" flag, the program will use a waitpid() call, which will prevent child processes from running in parallel.</p1>
               </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="subtitle-text-left">
+                <p1>Algorithm Diagram</p1>
+              </div>
+              <div class="img-wrapper">
+                <img src="media/code/n-queens/n-queens-algorithm.jpg" loading="lazy"/>
+              </div>
+            </div>
+            <div class="column">
+              <div class="subtitle-text-left">
+                <p1>Terminal Output</p1>
+              </div>
+              <div class="img-wrapper">
+                <img src="media/code/n-queens/n-queens-terminal-2.jpg" loading="lazy"/>
+              </div>
+              <div class="img-wrapper">
+                <img src="media/code/n-queens/n-queens-terminal-1.jpg" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="subtitle-text-left">
+              <p1>< View assignment PDF <a target="_blank" rel="noopener noreferrer" HREF="https://drive.proton.me/urls/W5RSPFC8AG#ZAotJt6HAN94">HERE.</a> ></p1>
+            </div>
           </div>
           <div class="divider-container">
             <div class="media-divider"></div>
@@ -235,7 +279,9 @@
         <div id="rpi-campus-map-cont" class="project-container" hidden>
           <div class="row">
               <div class="description-text">
-                <p1>(Coming Soon)</p1>
+                <p1>This was a homework assignment I completed for RPI's Principles of Software course (CSCI 2600).
+                The assignment was to use a previously implemented Graph class to store a make determinations about
+                location data for buildings on the RPI campus.</p1>
               </div>
           </div>
           <div class="divider-container">
@@ -256,8 +302,34 @@
         <div id="tcp-wordle-server-cont" class="project-container" hidden>
           <div class="row">
               <div class="description-text">
-                <p1>(Coming Soon)</p1>
+                <p1>This was a homework assignment I completed for RPI's Operating Systems course (CSCI 4210).
+                The assignment was to implement a single-process multi-threaded TCP server for the Wordle word game.
+                In case you've never played Wordle, you can play it <a target="_blank" rel="noopener noreferrer" HREF="https://www.nytimes.com/games/wordle">HERE.</a>
+                Using POSIX threads, the server is able to handle mutiple client connections in parallel.</p1>
               </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="subtitle-text-left">
+                <p1>Server Client Output</p1>
+              </div>
+              <div class="img-wrapper">
+                <img src="media/code/tcp-wordle-server/tcp-wordle-server-client.jpg" loading="lazy"/>
+              </div>
+            </div>
+            <div class="column">
+              <div class="subtitle-text-left">
+                <p1>Server Output</p1>
+              </div>
+              <div class="img-wrapper">
+                <img src="media/code/tcp-wordle-server/tcp-wordle-server-server.jpg" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="subtitle-text-left">
+              <p1>< View assignment PDF <a target="_blank" rel="noopener noreferrer" HREF="https://drive.proton.me/urls/FXEQG5S6BG#EKvkxv2FXhV9">HERE.</a> ></p1>
+            </div>
           </div>
           <div class="divider-container">
             <div class="media-divider"></div>
@@ -277,7 +349,11 @@
         <div id="my-website-cont" class="project-container" hidden>
           <div class="row">
               <div class="description-text">
-                <p1>(Coming Soon)</p1>
+                <p1>willbordman.com is the first website I've built. It's been ton of fun creating
+                these webpages and aggregating the work I've done over the past few years. View this
+                website's source <a target="_blank" rel="noopener noreferrer" HREF="https://github.com/7ds3f/7ds3f.github.io">HERE.</a>
+                All source code for this website is my own. Please don't hesitate to contact me if
+                you find any issues with this website or content! This website is still a work in progress.</p1>
               </div>
           </div>
           <div class="divider-container">
