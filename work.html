@@ -123,88 +123,68 @@
       </div>
       <div class="code-showcase">
         <div class="divider-container"></div>
-        <button id="spotify-bot" type="button" class="collapsible">
+        <button id="rpi-campus-map" type="button" class="collapsible">
           <div class="project-info-container">
-            <div class="project-info">Python</div>
+            <div class="project-info">Java</div>
           </div>
           <div class="button-text-container">
-            <div class="button-text">Grayscale Spotify Playlist Generator</div>
+            <div class="button-text">RPI Campus Pathfinder</div>
           </div>
         </button>
-        <div id="spotify-bot-cont" class="project-container" hidden>
+        <div id="rpi-campus-map-cont" class="project-container" hidden>
           <div class="row">
               <div class="description-text">
-                <p1>This was a personal project with the goal being to learn how to use the Spotify API and to create a customizable
-                alternative to Spotify's auto-generated playlists like Discovery Weekly and the Daily Mixes. Given a list of genres and
-                artists of the user's choosing, this program will populate a playlist with Spotify's recommedation system. The program
-                will add a song only if: (1) its album cover is greyscale, and (2) if it has the appropriate energy level based on the time of day.
-                Spotify generates an "energy" level for every song in its catalog, and this program will add songs with lower "energy" in the morning
-                and songs with higher "energy" in the afternoon/at night. "Energy" represents "a perceptual measure of intensity and activity",
-                according to Spotify's documentation. If the program detects that three iterations have passed without having found any songs
-                that meet this criteria, the program will choose different artists and genres from the given lists for Spotify's recommedation
-                function and raise the required "energy" value cutoffs. I used the Spotipy Python library to access the functions of the Spotify API.</p1>
+                <p1>This was a homework assignment I completed for RPI's Principles of Software course (CSCI 2600).
+                The goal was to use a previously implemented Graph ADT (abstract data type) to store location data for buildings
+                on the RPI campus. Using Dijkstra's algorithm, the program is able to calculate the shortest
+                path between any two buildings on the campus. The program accepts the names of buildings or building
+                ID numbers as shown on the map below. The program supports the following input commands: "b" will list all buildings,
+                "r" will find the path between any two buildings, and "q" will quit the program. When implementing the functions
+                for this program, I had to adhere to the Model-View-Control design pattern because modular design, writing code for
+                reuse, and design patterns were major focus points for this assignment. I also wrote several unit tests for each of this program's
+                functions using JUnit 4.</p1>
               </div>
+          </div>
+          <div class="row">
+            <div class="subtitle-text-left">
+              <p1>RPI Campus Map (cropped)</p1>
+            </div>
+            <div class="img-wrapper">
+              <img src="media/code/rpi-campus-map/rpi-campus-map-map.jpg" loading="lazy"/>
+            </div>
           </div>
           <div class="row">
             <div class="column">
               <div class="subtitle-text-left">
-                <p1>Terminal Output</p1>
+                <p1>List Buildings + IDs Feature</p1>
               </div>
               <div class="img-wrapper">
-                <img src="media/code/spotify-bot/spotify-bot-terminal.jpg" loading="lazy"/>
+                <img src="media/code/rpi-campus-map/rpi-campus-map-buildings.jpg" loading="lazy"/>
               </div>
             </div>
             <div class="column">
               <div class="subtitle-text-left">
-                <p1>Spotify Playlist</p1>
+                <p1>Some Pathfinding Examples</p1>
               </div>
               <div class="img-wrapper">
-                <img src="media/code/spotify-bot/spotify-bot-spotify.jpg" loading="lazy"/>
+                <img src="media/code/rpi-campus-map/rpi-campus-map-path-1.jpg" loading="lazy"/>
+              </div>
+              <div class="img-wrapper">
+                <img src="media/code/rpi-campus-map/rpi-campus-map-path-2.jpg" loading="lazy"/>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="subtitle-text-left">
-              <p1>< View source <a target="_blank" rel="noopener noreferrer" HREF="https://github.com/7ds3f/grayscale-pl-gen">HERE.</a> ></p1>
+              <p1>< View assignment <a target="_blank" rel="noopener noreferrer" HREF="https://drive.proton.me/urls/R8Q6P3286R#rdgbXT8tLoM1">HERE.</a> ></p1>
             </div>
           </div>
           <div class="row">
               <div class="description-text">
-                <p1>To determine if an album cover is greyscale, I used the Pillow Python library for image analysis. Using the Spotify API,
-                a song's album cover is downloaded. After it is reduced to a lower resolution, the Pillow libary analyzes the color bands of the
-                album cover to determine if it is greyscale. The code for some of this analysis is from Stack Exchange. See the code below
-                for acknowledgements.</p1>
+                <p1>I enjoyed this assignment because it resulted in a helpful tool, a valuable piece of software that could be
+                beneficial for all RPI students. It was also a great experience learning how to write correct code which is logically organized,
+                readable, and modular.</p1>
               </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-left">
-              <p1>detect_color_image Function</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="source-border">
-              <div class="code-text">
-                <pre data-src="https://raw.githubusercontent.com/7ds3f/grayscale-pl-gen/main/image_bw.py"></pre>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-              <div class="description-text">
-                <p1>Below is the vibe_check function that determines the "energy" values of tracks with Spotify's API's audio
-                features function.</p1>
-              </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-left">
-              <p1>vibe_check Function</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="source-border">
-              <div class="code-text">
-                <pre data-src="https://raw.githubusercontent.com/7ds3f/grayscale-pl-gen/main/main.py" data-range="60,80"></pre>
-              </div>
-            </div>
           </div>
           <div class="divider-container">
             <div class="media-divider"></div>
@@ -263,7 +243,8 @@
           </div>
           <div class="row">
               <div class="description-text">
-                <p1>I learned</p1>
+                <p1>This was a valuable assignment because it taught me how to use a waitpid() call effectively to control
+                child processes.</p1>
               </div>
           </div>
           <div class="divider-container">
@@ -273,21 +254,87 @@
       </div>
       <div class="code-showcase">
         <div class="divider-container"></div>
-        <button id="rpi-campus-map" type="button" class="collapsible">
+        <button id="spotify-bot" type="button" class="collapsible">
           <div class="project-info-container">
-            <div class="project-info">Java</div>
+            <div class="project-info">Python</div>
           </div>
           <div class="button-text-container">
-            <div class="button-text">RPI Campus Pathfinder</div>
+            <div class="button-text">Grayscale Spotify Playlist Generator</div>
           </div>
         </button>
-        <div id="rpi-campus-map-cont" class="project-container" hidden>
+        <div id="spotify-bot-cont" class="project-container" hidden>
           <div class="row">
               <div class="description-text">
-                <p1>This was a homework assignment I completed for RPI's Principles of Software course (CSCI 2600).
-                The assignment was to use a previously implemented Graph class to store a make determinations about
-                location data for buildings on the RPI campus.</p1>
+                <p1>This was a personal project with the goal being to learn how to use the Spotify API and to create a customizable
+                alternative to Spotify's auto-generated playlists like Discovery Weekly and the Daily Mixes. Given a list of genres and
+                artists of the user's choosing, this program will populate a playlist with Spotify's recommedation system. The program
+                will add a song only if: (1) its album cover is greyscale, and (2) if it has the appropriate energy level based on the time of day.
+                Spotify generates an "energy" level for every song in its catalog, and this program will add songs with lower "energy" in the morning
+                and songs with higher "energy" in the afternoon/at night. "Energy" represents "a perceptual measure of intensity and activity",
+                according to Spotify's documentation. If the program detects that three iterations have passed without having found any songs
+                that meet this criteria, the program will choose different artists and genres from the given lists for Spotify's recommedation
+                function and raise the required "energy" value cutoffs. I used the Spotipy Python library to access the functions of the Spotify API.</p1>
               </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="subtitle-text-left">
+                <p1>Terminal Output</p1>
+              </div>
+              <div class="img-wrapper">
+                <img src="media/code/spotify-bot/spotify-bot-terminal.jpg" loading="lazy"/>
+              </div>
+            </div>
+            <div class="column">
+              <div class="subtitle-text-left">
+                <p1>Spotify Playlist</p1>
+              </div>
+              <div class="img-wrapper">
+                <img src="media/code/spotify-bot/spotify-bot-spotify.jpg" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="subtitle-text-left">
+              <p1>< View source <a target="_blank" rel="noopener noreferrer" HREF="https://github.com/7ds3f/grayscale-pl-gen">HERE.</a> ></p1>
+            </div>
+          </div>
+          <div class="row">
+              <div class="description-text">
+                <p1>I used the Pillow Python library to determine if an album cover is grayscale. After a song's album cover is downloaded and reduced to a lower resolution, the detect_color_image function below analyzes the color bands of the
+                album cover to determine if it is black and white, grayscale, or color. The code for some of this analysis is from Stack Exchange. See the code below
+                for acknowledgements.</p1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="subtitle-text-left">
+              <p1>detect_color_image Function</p1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="source-border">
+              <div class="code-text">
+                <pre data-src="https://raw.githubusercontent.com/7ds3f/grayscale-pl-gen/main/image_bw.py"></pre>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="description-text">
+                <p1>Below is the vibe_check function that determines the "energy" values of tracks with Spotify's API's audio
+                features function.</p1>
+              </div>
+          </div>
+          <div class="row">
+            <div class="subtitle-text-left">
+              <p1>vibe_check Function</p1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="source-border">
+              <div class="code-text">
+                <pre data-src="https://raw.githubusercontent.com/7ds3f/grayscale-pl-gen/main/main.py" data-range="60,80"></pre>
+              </div>
+            </div>
           </div>
           <div class="divider-container">
             <div class="media-divider"></div>
@@ -308,15 +355,22 @@
           <div class="row">
               <div class="description-text">
                 <p1>This was a homework assignment I completed for RPI's Operating Systems course (CSCI 4210).
-                The assignment was to implement a single-process multi-threaded TCP server for the Wordle word game.
-                In case you've never played Wordle, you can play it <a target="_blank" rel="noopener noreferrer" HREF="https://www.nytimes.com/games/wordle">HERE.</a>
-                Using POSIX threads, the server is able to handle mutiple client connections in parallel.</p1>
+                The goal was to implement a single-process multi-threaded TCP server for the Wordle word game.
+                (In case you've never played Wordle, you can play it <a target="_blank" rel="noopener noreferrer" HREF="https://www.nytimes.com/games/wordle">HERE.</a>)
+                Using a simple client program, a user can connect to the server with a port number. The user will then have 6 tries to guess
+                a hidden word. Upon receiving a guess, the server will return an eight-byte packet to the client depending on whether the user guessed the correct word,
+                guessed an incorrect word, or guessed an invalid word (i.e. a word that doesn't exist). And since the server uses POSIX threads,
+                it is able to handle mutiple client connections and Wordle games in parallel. The server also keeps track of the total number of valid guesses,
+                wins, and losses via global variables; I had to use mutex locks for thread synchronization,
+                since each thread has to update these global variables during gameplay. In addition to learning about thread creation and functions like socket(), bind(), and listen()
+                for network setup, I also had to write my own Wordle algorithm. I used hashtables to compare a user's guess
+                with the hidden word. See the screenshots or assignment PDF below for more details about how these comparisons are displayed. </p1>
               </div>
           </div>
           <div class="row">
             <div class="column">
               <div class="subtitle-text-left">
-                <p1>Server Client Output</p1>
+                <p1>Client Output</p1>
               </div>
               <div class="img-wrapper">
                 <img src="media/code/tcp-wordle-server/tcp-wordle-server-server.jpg" loading="lazy"/>
@@ -336,6 +390,13 @@
               <p1>< View assignment <a target="_blank" rel="noopener noreferrer" HREF="https://drive.proton.me/urls/FXEQG5S6BG#EKvkxv2FXhV9">HERE.</a> ></p1>
             </div>
           </div>
+          <div class="row">
+              <div class="description-text">
+                <p1>I liked this assignment because it was the first time I had worked with low-level network functions.
+                I also really liked the concept of multi-threaded computing and seeing the obvious benefits it granted
+                when implemented into this project.</p1>
+              </div>
+          </div>
           <div class="divider-container">
             <div class="media-divider"></div>
           </div>
@@ -354,11 +415,10 @@
         <div id="my-website-cont" class="project-container" hidden>
           <div class="row">
               <div class="description-text">
-                <p1>willbordman.com is the first website I've built. It's been ton of fun creating
-                these webpages and aggregating the work I've done over the past few years. View this
+                <p1>willbordman.com is the first website I've built from scratch. It's been fun creating
+                these webpages and aggregating the work I've done over the past few years. You can view this
                 website's source <a target="_blank" rel="noopener noreferrer" HREF="https://github.com/7ds3f/7ds3f.github.io">HERE.</a>
-                All source code for this website is my own. Please don't hesitate to contact me if
-                you find any issues with this website or content! This website is still a work in progress.</p1>
+                Please don't hesitate to contact me if you find any issues. This website is still a work in progress!</p1>
               </div>
           </div>
           <div class="divider-container">
