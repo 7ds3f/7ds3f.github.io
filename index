@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Home | Will Bordman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body id="index-page-body">
   <div class="page-header">
-    <a HREF="index.html">willbordman.com</a>
+    <a HREF="index">willbordman.com</a>
   </div>
   <div class="home-center">
     <p1>Welcome to the site for</p1>
     <h1>Will Bordman.</h1>
     <div id="links">
-      <a HREF="about.html">| About</a>
-      <a HREF="work.html">| Work</a>
-      <a HREF="contact.html">| Contact & Resume</a>
+      <a HREF="about">| About</a>
+      <a HREF="work">| Work</a>
+      <a HREF="contact">| Contact & Resume</a>
     </div>
   </div>
   <div class="page-footer">
-    <p1>WORK IN PROGRESS | ALPHA v. 0.5</p1>
+    <p1>WORK IN PROGRESS | BETA v. 1.0</p1>
   </div>
 </body>
 </html>

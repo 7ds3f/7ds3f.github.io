@@ -2,18 +2,19 @@
 <html>
 
 <head>
+  <title>Work | Will Bordman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="scripts/prism.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="scripts/jquery-3.7.0.min.js"></script>
   <script src="scripts/work-script.js"></script>
-  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
   <div class="page-header">
-    <a HREF="index.html">willbordman.com</a>
+    <a HREF="index">willbordman.com</a>
   </div>
   <div class="page-title">
     <p1>Here's some of my</p1>
@@ -2243,7 +2244,8 @@
                 <div class="description-text">
                   <h1>Project Acknowledgements</h1>
                   <div class="divider-container"></div>
-                  <p1>Some textures are from Textures.com and Poliigon.com</p1>
+                  <p1>Final Animation Song - "2009" by Mac Miller<br>
+                  Some textures are from Textures.com and Poliigon.com</p1>
                 </div>
               </div>
             </div>
@@ -2260,8 +2262,20 @@
             <div class="subtitle-text-left">
               <p1>Final Animation</p1>
             </div>
-            <div class="img-wrapper">
-              <p1>(Coming Soon)</p1>
+          </div>
+          <div class="row">
+            <div class="iframe-wrapper">
+              <iframe id="house-animation" src="https://player.vimeo.com/video/388845489"></iframe>
+            </div>
+          </div>
+          <div class="row">
+            <div class="subtitle-text-left">
+              <p1>Project Presention</p1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="iframe-wrapper">
+              <iframe id="house-presentation" src="https://player.vimeo.com/video/383979658"></iframe>
             </div>
           </div>
           <div class="divider-container">
@@ -2273,7 +2287,7 @@
     </div>
   </div>
   <div class="page-footer">
-    <p1>WORK IN PROGRESS | ALPHA v. 0.5</p1>
+    <p1>WORK IN PROGRESS | BETA v. 1.0</p1>
   </div>
 </body>
 <script src="scripts/prism.js"></script>
