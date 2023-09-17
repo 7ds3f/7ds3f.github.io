@@ -151,9 +151,6 @@ a:active { text-decoration: none; }
   width: 75%;
 }
 
-.media-container {
-}
-
 .media-display {
   width: 95%;
   margin: auto;
@@ -236,9 +233,6 @@ a:active { text-decoration: none; }
 .gallery-showcase img {
   border-radius: 5px;
   width: 100%;
-}
-
-.gallery-showcase img:hover {
 }
 
 .info-showcase {
@@ -420,6 +414,13 @@ a:active { text-decoration: none; }
   background-size: cover;
 }
 
+#triumph-modular {
+  background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
+    linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
+    url("media/3d/project-details/triumph-modular/triumph-modular-cover.jpg") no-repeat left center;
+  background-size: cover;
+}
+
 #darth-croft {
   background: linear-gradient(to bottom, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 1)),
     linear-gradient(to right, rgba(0, 23, 31, 0.2), rgba(0, 23, 31, 0.5) 20%, rgba(0, 23, 31, 1) 60%),
@@ -489,6 +490,12 @@ a:active { text-decoration: none; }
   margin-left: auto;
 }
 
+.project-info-container-commercial {
+  padding: 25px;
+  max-width: 300px;
+  margin-left: auto;
+}
+
 .project-info {
   border-style: solid;
   border-width: 1px;
@@ -498,6 +505,18 @@ a:active { text-decoration: none; }
   font-family: "Lekton", Arial, sans-serif;
   font-style: normal;
   color: #00FFC5;
+  padding: 5px;
+}
+
+.project-info-commercial {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #F0A211;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Lekton", Arial, sans-serif;
+  font-style: normal;
+  color: #F0A211;
   padding: 5px;
 }
 
@@ -542,9 +561,6 @@ a:active { text-decoration: none; }
   max-width: 100%;
   padding: 5px;
   cursor: pointer;
-}
-
-.gallery-img-wrapper:hover {
 }
 
 .learn-more-icon {
@@ -644,9 +660,6 @@ a:active { text-decoration: none; }
   text-align: center;
 }
 
-.subtitle-text-left {
-}
-
 .subtitle-text-center p1 {
   font-size: 25px;
   font-style: italic;
@@ -697,6 +710,21 @@ a:active { text-decoration: none; }
   }
   .circle-img-wrapper {
     width: 75%;
+  }
+  .image-details-mini h1 {
+    font-size: 20px;
+  }
+  .image-details-mini p1 {
+    font-size: 20px;
+  }
+  .image-details-mini a {
+    font-size: 20px;
+  }
+  .ack-showcase-mini h1 {
+    font-size: 15px;
+  }
+  .ack-showcase-mini p1 {
+    font-size: 15px;
   }
 }
 
