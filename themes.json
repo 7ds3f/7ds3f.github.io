@@ -2,7 +2,8 @@
   "themes": {
     "dark": {
       "color1": "#1B1B2F",
-      "color2": "#E43F5A"
+      "color2": "#E43F5A",
+      "color3": "#E43F5A"
     }
   }
 }
