@@ -746,6 +746,9 @@ a:active { text-decoration: none; }
   .ack-showcase-mini p1 {
     font-size: 15px;
   }
+  .home-center {
+    border-style: none;
+  }
 }
 
 .code-border {
