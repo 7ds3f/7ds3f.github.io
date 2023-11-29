@@ -74,12 +74,12 @@ document.addEventListener("DOMContentLoaded", () => {
     col2[i].addEventListener("mouseover", function() {
       var content = this.nextElementSibling;
       this.style.borderColor = "#3185FC";
-      content.style.borderImage = "linear-gradient(to bottom, #3185FC, #00171F 50%) 1";
+      content.style.borderImage = "linear-gradient(to bottom, rgba(49, 133, 252, 1), rgba(0, 23, 31, 0) 50%) 1";
     });
     col2[i].addEventListener("mouseout", function() {
       var content = this.nextElementSibling;
       this.style.borderColor = "#00FFC5";
-      content.style.borderImage = "linear-gradient(to bottom, #00FFC5, #00171F 50%) 1";
+      content.style.borderImage = "linear-gradient(to bottom, rgba(0, 255, 197, 1), rgba(0, 23, 31, 0) 50%) 1";
     });
   }
 
@@ -99,12 +99,12 @@ document.addEventListener("DOMContentLoaded", () => {
     coll[i].addEventListener("mouseover", function() {
       var content = this.nextElementSibling;
       this.style.borderColor = "#3185FC";
-      content.style.borderImage = "linear-gradient(to bottom, #3185FC, #00171F 50%) 1";
+      content.style.borderImage = "linear-gradient(to bottom, rgba(49, 133, 252, 1), rgba(0, 23, 31, 0) 50%) 1";
     });
     coll[i].addEventListener("mouseout", function() {
       var content = this.nextElementSibling;
       this.style.borderColor = "#00FFC5";
-      content.style.borderImage = "linear-gradient(to bottom, #00FFC5, #00171F 50%) 1";
+      content.style.borderImage = "linear-gradient(to bottom, rgba(0, 255, 197, 1), rgba(0, 23, 31, 0) 50%) 1";
     });
   }
 
@@ -129,8 +129,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //image states
     var selected = {
-      "filter": "opacity(0.15)",
-      "-webkit-filter": "opacity(0.15)",
+      "filter": "opacity(0)",
+      "-webkit-filter": "opacity(0)",
     };
 
     var deselected = {

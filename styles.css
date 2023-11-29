@@ -13,15 +13,36 @@
 }
 
 body {
-  background-color: #00171F;
+  background-color: black;
 }
 
 #index-page-body {
-  background-image: url("media/background.png");
+  height: 100vh;
+  background-image: url("media/background.png"), linear-gradient(#00171F, black 90%);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: top;
-  background-blend-mode: overlay;
+}
+
+#work-page-body {
+  background-image: url("media/background_gradient.png"), linear-gradient(#00171F, black 2000px);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#about-page-body {
+  background-image: url("media/background_gradient.png"), linear-gradient(#00171F, black 80%);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#contact-page-body {
+  background-image: url("media/background_gradient.png"), linear-gradient(#00171F, black 80%);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 h1 {
@@ -66,7 +87,6 @@ p3 {
 }
 
 a {
-  margin: 4px;
   font-size: 25px;
   font-family: "League Spartan", Arial, sans-serif;
   color: #00FFC5;
@@ -100,6 +120,10 @@ a:active { text-decoration: none; }
   flex-direction: column;
 }
 
+#links a {
+  margin: 4px;
+}
+
 .socials-icons {
   text-align: center;
 }
@@ -125,15 +149,21 @@ a:active { text-decoration: none; }
   padding: 5px;
 }
 
+.page-header-content {
+  padding: 10px;
+  background-color: #00171F;
+  width: fit-content;
+  margin: auto;
+  border-radius: 0px 0px 10px 10px;
+}
+
 .page-header {
   top: 0;
   left: 0;
-  width: 100%;
-  text-align: center;
-  background-color: #00171F;
   position: fixed;
+  width: 100%;
   z-index: 100;
-  padding: 10px;
+  justify-content: center;
 }
 
 .page-header a {
@@ -143,11 +173,18 @@ a:active { text-decoration: none; }
 }
 
 .page-title {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding-top: 80px;
+  padding-bottom: 60px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.page-title-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 50px;
+  padding-left: 20px;
 }
 
 .page-center {
@@ -251,7 +288,7 @@ a:active { text-decoration: none; }
   margin: auto;
   display: flex;
   flex-direction: column;
-  max-width: 1500px;
+  max-width: 90%;
 }
 
 .info-showcase img {
@@ -290,7 +327,7 @@ a:active { text-decoration: none; }
 
 .project-container {
   border-radius: 0px 0px 10px 10px;
-  border-image: linear-gradient(to bottom, #00FFC5, #00171F 50%) 1;
+  border-image: linear-gradient(to bottom, rgba(0, 255, 197, 1), rgba(0, 23, 31, 0) 50%) 1;
   border-style: none solid solid solid;
   border-width: 5px;
   padding: 10px;
@@ -299,7 +336,7 @@ a:active { text-decoration: none; }
 
 .gallery-container {
   border-radius: 0px 0px 10px 10px;
-  border-image: linear-gradient(to bottom, #00FFC5, #00171F 50%) 1;
+  border-image: linear-gradient(to bottom, rgba(0, 255, 197, 1), rgba(0, 23, 31, 0) 50%) 1;
   border-style: none solid solid solid;
   border-width: 5px;
   padding: 10px;
@@ -635,7 +672,7 @@ a:active { text-decoration: none; }
 }
 
 .info-text {
-  max-width: 90%;
+  max-width: 70%;
   margin: auto;
   text-align: center;
 }
@@ -645,7 +682,8 @@ a:active { text-decoration: none; }
   border-width: 5px;
   border-color: #00FFC5;
   border-radius: 10px;
-  padding: 10px;
+  background-color: #00171F;
+  padding: 20px;
 }
 
 .info-showcase .info-text {
@@ -653,7 +691,8 @@ a:active { text-decoration: none; }
   border-width: 5px;
   border-color: #00FFC5;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
+  background-color: #00171F;
 }
 
 .description-text a {
@@ -722,6 +761,7 @@ a:active { text-decoration: none; }
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    max-width: 90%;
   }
   .description-text {
     margin: auto;
@@ -775,11 +815,10 @@ a:active { text-decoration: none; }
 }
 
 .switch {
-  margin: auto;
+  text-align: center;
   display: flex;
   flex-direction: row;
   width: fit-content;
-  padding-bottom: 20px;
 }
 
 .switch-btn {
