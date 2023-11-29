@@ -18,28 +18,28 @@ body {
 
 #index-page-body {
   height: 100vh;
-  background-image: url("media/background.png"), linear-gradient(#00171F, black 90%);
+  background-image: url("media/stars.png"), url("media/background.png"), linear-gradient(#00171F, black 100%);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: top;
 }
 
 #work-page-body {
-  background-image: url("media/background_gradient.png"), linear-gradient(#00171F, black 2000px);
+  background-image: url("media/stars.png"), url("media/background_gradient.png"), linear-gradient(#00171F, black 2000px);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: top;
 }
 
 #about-page-body {
-  background-image: url("media/background_gradient.png"), linear-gradient(#00171F, black 80%);
+  background-image: url("media/stars.png"), url("media/background_gradient.png"), linear-gradient(#00171F, black 80%);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: top;
 }
 
 #contact-page-body {
-  background-image: url("media/background_gradient.png"), linear-gradient(#00171F, black 80%);
+  background-image: url("media/stars.png"), url("media/background_gradient.png"), linear-gradient(#00171F, black 80%);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: top;
