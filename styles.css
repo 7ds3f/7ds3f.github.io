@@ -22,24 +22,25 @@ body {
   background-size: auto;
   background-repeat: no-repeat;
   background-position: top;
+  overflow-y: hidden;
 }
 
 #work-page-body {
-  background-image: url("media/stars.png"), url("media/background_gradient.png"), linear-gradient(#00171F, black 2000px);
+  background-image: url("media/stars.png"), url("media/background-gradient.png"), linear-gradient(#00171F, black 2000px);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: top;
 }
 
 #about-page-body {
-  background-image: url("media/stars.png"), url("media/background_gradient.png"), linear-gradient(#00171F, black 80%);
+  background-image: url("media/stars.png"), url("media/background-gradient.png"), linear-gradient(#00171F, black 80%);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: top;
 }
 
 #contact-page-body {
-  background-image: url("media/stars.png"), url("media/background_gradient.png"), linear-gradient(#00171F, black 80%);
+  background-image: url("media/stars.png"), url("media/background-gradient.png"), linear-gradient(#00171F, black 80%);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: top;
@@ -108,11 +109,32 @@ a:active { text-decoration: none; }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.home-menu-container {
   padding: 30px;
   border-style: solid;
   border-width: 5px;
   border-radius: 10px;
   border-color: #00FFC5;
+}
+
+.home-icon-border {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-text-border {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 #links {
@@ -142,6 +164,11 @@ a:active { text-decoration: none; }
   background-color: #00171F;
   color: white;
   text-align: right;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .page-footer p1 {
@@ -164,6 +191,11 @@ a:active { text-decoration: none; }
   width: 100%;
   z-index: 100;
   justify-content: center;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .page-header a {
@@ -786,7 +818,7 @@ a:active { text-decoration: none; }
   .ack-showcase-mini p1 {
     font-size: 15px;
   }
-  .home-center {
+  .home-menu-container {
     border-style: none;
   }
 }
