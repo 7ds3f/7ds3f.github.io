@@ -22,6 +22,7 @@ body {
   background-size: auto;
   background-repeat: no-repeat;
   background-position: top;
+  overflow-y: hidden;
 }
 
 #work-page-body {
@@ -820,6 +821,12 @@ a:active { text-decoration: none; }
   }
   .home-menu-container {
     border-style: none;
+  }
+  .home-icon-border {
+    padding-top: 0px;
+  }
+  #home-titles {
+    display: none;
   }
 }
 
