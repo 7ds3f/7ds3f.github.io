@@ -22,7 +22,6 @@ body {
   background-size: auto;
   background-repeat: no-repeat;
   background-position: top;
-  overflow-y: hidden;
 }
 
 #work-page-body {
@@ -114,6 +113,7 @@ a:active { text-decoration: none; }
   -khtml-user-select: none;
   -webkit-user-select: none;
   -o-user-select: none;
+  filter: drop-shadow(10px 10px 15px #008264);
 }
 
 .home-menu-container {
