@@ -207,7 +207,6 @@ a:active { text-decoration: none; }
 
 .page-title {
   padding-top: 70px;
-  padding-bottom: 30px;
   display: flex;
   justify-content: center;
   user-select: none;
@@ -390,7 +389,7 @@ a:active { text-decoration: none; }
   font-style: italic;
   min-height: 300px;
   cursor: pointer;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .gallery-collapsible {
@@ -795,6 +794,7 @@ a:active { text-decoration: none; }
   margin-bottom: auto;
   padding-left: 10%;
   filter: drop-shadow(10px 10px 15px #008264);
+  padding-bottom: 0px;
 }
 
 .switch-btn {
@@ -895,6 +895,7 @@ a:active { text-decoration: none; }
   }
   .switch {
     padding-left: 0%;
+    padding-bottom: 30px;
   }
 }
 
