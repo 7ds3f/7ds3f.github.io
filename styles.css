@@ -405,7 +405,7 @@ a:active { text-decoration: none; }
   font-style: italic;
   min-height: 200px;
   cursor: pointer;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .collapsible:after {
