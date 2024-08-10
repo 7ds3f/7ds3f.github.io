@@ -1,6 +1,19 @@
-root {
+:root {
     /* theme colors */
     /* dark mode */
-    --dm-main-green: #00FFC5;
-    --dm-main-blue: #3185FC;
+    --dm-background: black;
+    --dm-footer-background: transparent;
+    --dm-background-gradient-start: #00171F;
+    --dm-background-gradient-end: black;
+    --dm-green: #00FFC5;
+    --dm-orange: #F0A211;
+    --dm-blue: #3185FC;
+    --dm-sheen-start: rgba(0,0,0,0);
+    --dm-sheen-end: rgba(255, 255, 255, 0.6);
+    --dm-drop-shadow: #008264;
+    /* light mode */
+    --lm-background: #f1f1f1;
+    --lm-footer-background: transparent;
+    --lm-green: #222222;
+    --lm-blue: #8400ff;
 }
