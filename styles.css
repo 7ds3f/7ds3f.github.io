@@ -300,6 +300,10 @@ a:active {
   filter: none!important;
 }
 
+.switch-btn-dm {
+
+}
+
 /*  */
 
 .home-icon-border {
@@ -791,14 +795,40 @@ a:active {
   padding-top: 20px;
 }
 
+.grid-item-title {
+  /* text-align: center; */
+}
+
+.school {
+  background-color: #999;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.school-logo {
+  width: 33.33%;
+  text-align: right;
+}
+
+.school-logo img {
+  width: 50%;
+  margin: auto;
+}
+
+.school-about {
+  width: 66.66%;
+  background-color: #00171F;
+}
+
 .grid-item {
   border-radius: 10px;
-  outline-color: black;
-  outline-width: 5px;
+  outline-color: var(--dm-green);
+  outline-width: 1px;
   outline-style: solid;
-  text-align: center;
-  padding: 20px;
+  padding: 5px;
   font-size: 30px;
+  background-color: #00171fb6;
 }
 
 .item1 {
@@ -808,12 +838,17 @@ a:active {
 
 .item2 {
   grid-column: 3;
-  grid-row: 1 / span 2;
+  grid-row: 1;
 }
 
-.item5 {
-  grid-column: 1 / span 3;
-  grid-row: 3;
+.item3 {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
+
+.item4 {
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .about-section {
