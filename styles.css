@@ -9,8 +9,7 @@
 
 @font-face {
   font-family: 'Lekton';
-  src: url('fonts/Lekton-Regular.ttf') format('truetype');
-  font-weight: bold;
+  src: url('fonts/Lekton-Regular.ttf') format('opentype');
   font-style: normal;
 }
 
@@ -26,31 +25,6 @@ body {
 #index-page-body {
   overflow-y: hidden;
 }
-
-/* #work-page-body {
-  background-image: url("media/stars.png"), url("media/background-gradient.png"), linear-gradient(var(--dm-background-gradient-start), var(--dm-background-gradient-end) 2000px);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
-#about-page-body {
-  background-image: url("media/stars.png"), url("media/background-gradient.png"), linear-gradient(var(--dm-background-gradient-start), var(--dm-background-gradient-end) 80%);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
-#about-page2-body {
-  background-color: white;
-}
-
-#contact-page-body {
-  background-image: url("media/stars.png"), url("media/background-gradient.png"), linear-gradient(var(--dm-background-gradient-start), var(--dm-background-gradient-end) 80%);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: top;
-} */
 
 h1 {
   margin: 4px;
@@ -301,7 +275,249 @@ a:active {
 }
 
 .switch-btn-dm {
+  border-color: var(--lm-green)!important;
+}
 
+.switch-btn-dm:hover {
+  border-color: var(--dm-blue)!important;
+}
+
+.switch-left-dm {
+  background-color: transparent!important;
+  color: var(--lm-green)!important;
+}
+
+.switch-right-dm {
+  background-color: transparent!important;
+  color: var(--lm-green)!important;
+}
+
+.switch-left-dm.active {
+  background-color: var(--lm-green)!important;
+  color: var(--lm-background)!important;
+}
+
+.switch-right-dm.active {
+  background-color: var(--lm-green)!important;
+  color: var(--lm-background)!important;
+}
+
+.code-showcase-dm .description-text p1 {
+  color: var(--lm-green);
+}
+
+.code-showcase-dm .description-text a {
+  color: var(--lm-green);
+}
+
+.code-showcase-dm .description-text a:hover {
+  color: var(--dm-blue);
+}
+
+.code-showcase-dm .row .subtitle-text-center p1 {
+  color: var(--lm-green);
+}
+
+.code-showcase-dm .collapsible {
+  border-color: var(--lm-green)!important;
+}
+
+.code-showcase-dm .collapsible:after {
+  color: var(--lm-green)!important;
+}
+
+.code-showcase-dm .collapsible.active:after {
+  color: var(--dm-blue)!important;
+}
+
+.code-showcase-dm .project-container {
+  background-color: transparent!important;
+}
+
+.code-showcase-dm .collapsible .project-info-container .project-info {
+  color: var(--lm-green)!important;
+  border-color: var(--lm-green)!important;
+}
+
+.code-showcase-dm .project-container .row .column .subtitle-text-center-col p1 {
+  color: var(--lm-green)!important;
+}
+
+.code-showcase-dm .project-container .row .subtitle-text-center-col p1 {
+  color: var(--lm-green)!important;
+}
+
+.code-showcase-dm .project-container .divider-container .media-divider {
+  background-color: var(--lm-green)!important;
+}
+
+.code-showcase-dm .project-container .row .source-border {
+  border-color: var(--lm-green)!important;
+}
+
+.code-showcase-dm .project-container .row .source-border:hover {
+  border-color: var(--dm-blue)!important;
+}
+
+.code-showcase-dm .collapsible .button-text-container .button-text {
+  color: var(--lm-green)!important;
+}
+
+.code-showcase-dm .collapsible .button-text-container .button-description p1 {
+  color: var(--lm-green)!important;
+}
+
+.info-showcase-dm .info-text {
+  border-color: var(--lm-green)!important;
+  background-color: transparent!important;
+}
+
+.info-showcase-dm .row .info-text p1 {
+  color: var(--lm-green)!important;
+}
+
+.interactive-data-viz-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/code/interactive-data-viz/interactive-data-viz-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.spotify-bot-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/code/spotify-bot/spotify-bot-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.n-queen-solver-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/code/n-queens/n-queens-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.rpi-campus-map-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/code/rpi-campus-map/rpi-campus-map-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.tcp-wordle-server-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/code/tcp-wordle-server/tcp-wordle-server-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.my-website-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/background.png") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.gallery-button-favorites-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/3d/favorites/eve-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.gallery-button-2023-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/3d/2023/guitar-water-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.gallery-button-2022-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/3d/2022/supercharger-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.gallery-button-old-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/3d/old/air-balloon-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.triumph-modular-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/3d/project-details/triumph-modular/triumph-modular-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.darth-croft-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/3d/project-details/darth-croft/darth-croft-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.window-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/3d/project-details/window/window-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.kara-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/3d/project-details/kara/kara-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.guitar-ad-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/3d/project-details/guitar-ad/guitar-ad-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.house-dm {
+  background: linear-gradient(to bottom, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 1)),
+    linear-gradient(to right, rgba(241, 241, 241, 0.2), rgba(241, 241, 241, 0.5) 20%, rgba(241, 241, 241, 1) 60%),
+    url("media/3d/project-details/house/house-cover.jpg") no-repeat left center!important;
+  background-size: cover!important;
+}
+
+.gallery-showcase-dm .description-text p1 {
+  color: var(--lm-green);
+}
+
+.gallery-showcase-dm .gallery-collapsible {
+  border-color: var(--lm-green)!important;
+}
+
+.gallery-showcase-dm .gallery-collapsible .button-text-container .button-text {
+  color: var(--lm-green)!important;
+}
+
+.gallery-showcase-dm .gallery-collapsible:after {
+  color: var(--lm-green)!important;
+}
+
+.gallery-showcase-dm .gallery-collapsible.active:after {
+  color: var(--dm-blue)!important;
+}
+
+.design-showcase-dm .description-text p1 {
+  color: var(--lm-green)!important;
+}
+
+.design-showcase-dm .collapsible {
+  border-color: var(--lm-green)!important;
+}
+
+.design-showcase-dm .collapsible .button-text-container .button-text {
+  color: var(--lm-green)!important;
 }
 
 /*  */
@@ -478,9 +694,6 @@ a:active {
 }
 
 .code-showcase img {
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--dm-green);
   border-radius: 10px;
   max-width: 100%;
   z-index: 10;
@@ -494,18 +707,12 @@ a:active {
 }
 
 .design-showcase img {
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--dm-green);
   border-radius: 10px;
   width: 100%;
   z-index: 10;
 }
 
 .design-showcase video {
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--dm-green);
   border-radius: 10px;
   width: 100%;
   z-index: 10;
@@ -520,9 +727,6 @@ a:active {
 }
 
 .code-showcase video {
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--dm-green);
   border-radius: 10px;
   width: 100%;
   z-index: 10;
@@ -588,6 +792,7 @@ a:active {
   border-width: 5px;
   padding: 10px;
   max-width: 100%;
+  background-color: #00171fb6;
 }
 
 .gallery-container {
@@ -1056,16 +1261,23 @@ li {
 
 .button-text-container {
   padding: 20px;
-  max-width: 70%;
+  max-width: 100%;
   margin-left: auto;
 }
 
 .button-text {
   z-index: 1;
-  color: white;
   font-size: 300%;
   text-align: right;
-  /* Align the button text to the right */
+  color: #00FFC5;
+  margin-left: auto;
+  min-height: 100%;
+  font-style: normal;
+}
+
+.button-description {
+  z-index: 1;
+  text-align: right;
   color: #00FFC5;
   margin-left: auto;
   min-height: 100%;
@@ -1083,6 +1295,7 @@ li {
   position: relative;
   margin: auto;
   max-width: 100%;
+  text-align: center;
   padding: 5px;
 }
 
@@ -1208,6 +1421,16 @@ li {
   text-align: center;
 }
 
+.subtitle-text-center-col {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.subtitle-text-center-col p1 {
+  font-size: 25px;
+}
+
 .subtitle-text-center {
   margin: auto;
   text-align: center;
@@ -1215,7 +1438,6 @@ li {
 
 .subtitle-text-center p1 {
   font-size: 25px;
-  font-style: italic;
 }
 
 .subtitle-text-left p1 {
@@ -1239,6 +1461,7 @@ li {
 
 .column {
   flex-basis: 50%;
+  padding-bottom: 10px;
 }
 
 .code-showcase .row {

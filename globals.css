@@ -12,7 +12,7 @@
     --dm-sheen-end: rgba(255, 255, 255, 0.6);
     --dm-drop-shadow: #008264;
     /* light mode */
-    --lm-background: #f1f1f1;
+    --lm-background: rgb(241, 241, 241);
     --lm-footer-background: transparent;
     --lm-green: #222222;
     --lm-blue: #8400ff;
