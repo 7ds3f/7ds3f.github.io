@@ -318,6 +318,10 @@ a:active {
   color: var(--lm-green);
 }
 
+.code-showcase-dm .collapsible:hover {
+  border-color: var(--dm-blue)!important;
+}
+
 .code-showcase-dm .collapsible {
   border-color: var(--lm-green)!important;
 }
@@ -492,6 +496,10 @@ a:active {
   color: var(--lm-green);
 }
 
+.gallery-showcase-dm .gallery-collapsible:hover {
+  border-color: var(--dm-blue)!important;
+}
+
 .gallery-showcase-dm .gallery-collapsible {
   border-color: var(--lm-green)!important;
 }
@@ -508,8 +516,16 @@ a:active {
   color: var(--dm-blue)!important;
 }
 
+.gallery-showcase-dm .divider-container .media-divider {
+  background-color: var(--lm-green)!important;
+}
+
 .design-showcase-dm .description-text p1 {
   color: var(--lm-green)!important;
+}
+
+.design-showcase-dm .collapsible:hover {
+  border-color: var(--dm-blue)!important;
 }
 
 .design-showcase-dm .collapsible {
@@ -518,6 +534,32 @@ a:active {
 
 .design-showcase-dm .collapsible .button-text-container .button-text {
   color: var(--lm-green)!important;
+}
+
+.design-showcase-dm .collapsible .project-info-container .project-info {
+  color: var(--lm-green)!important;
+  border-color: var(--lm-green)!important;
+}
+
+.design-showcase-dm .collapsible .project-info-container-commercial .project-info-commercial {
+  color: var(--lm-green)!important;
+  border-color: var(--lm-green)!important;
+}
+
+.design-showcase-dm .project-container {
+  background-color: transparent!important;
+}
+
+.design-showcase-dm .project-container a {
+  color: var(--lm-green)!important;
+}
+
+.design-showcase-dm .project-container a:hover {
+  color: var(--dm-blue)!important;
+}
+
+.design-showcase-dm .divider-container .media-divider {
+  background-color: var(--lm-green)!important;
 }
 
 /*  */

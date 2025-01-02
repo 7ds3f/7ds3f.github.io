@@ -40,14 +40,14 @@ function lightToggle() {
 }
 
 //light toggle auto
-function lightToggleAuto() {
-  const now = new Date();
-  const hours = now.getHours();
-  if (hours >= 8 && hours < 20) lightToggle();
-}
+// function lightToggleAuto() {
+//   const now = new Date();
+//   const hours = now.getHours();
+//   if (hours >= 8 && hours < 20) lightToggle();
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
   showDivById("about");
-  lightToggleAuto();
+  // lightToggleAuto();
   //document.getElementById("experience-scroll-box").onscroll = function() {scrollIndicator("experience-scroll-box", "experience-scroll-bar", "experience-scroll-percent")};
 });
