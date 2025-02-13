@@ -1,6 +1,6 @@
 :root {
     /* theme colors */
-    /* dark mode */
+    /* dark mode (default) */
     --dm-background: black;
     --dm-footer-background: transparent;
     --dm-background-gradient-start: #00171F;
@@ -11,9 +11,46 @@
     --dm-sheen-start: rgba(0,0,0,0);
     --dm-sheen-end: rgba(255, 255, 255, 0.6);
     --dm-drop-shadow: #008264;
+
+    --dm-light-toggle-bg: #00171F;
+    --dm-light-toggle-icon: #00FFC5;
+
+    --dm-project-gradient1: #00171f33;
+    --dm-project-gradient2: #00171f;
+    --dm-project-gradient4: #00171f80;
+
+    --dm-green-transparent: #00171fb6;
+
+    /* images */
+    --dm-bg-image1: url("media/background-gradient4.png");
+    --dm-bg-image2: url("media/background-gradient3.png");
+    --dm-bg-image3: url("media/stars.png");
+    --dm-bg-image4: url("media/background-gradient2.png");
+}
+
+.light-mode {
+    /* theme colors */
     /* light mode */
-    --lm-background: rgb(241, 241, 241);
-    --lm-footer-background: transparent;
-    --lm-green: #222222;
-    --lm-blue: #8400ff;
+    --dm-background: #f1f1f1;
+    --dm-footer-background: transparent;
+    --dm-background-gradient-start: #f1f1f1;
+    --dm-background-gradient-end: #f1f1f1;
+    --dm-green: #222222;
+    --dm-drop-shadow: transparent;
+
+    --dm-light-toggle-bg: #222222;
+    --dm-light-toggle-icon: #f1f1f1;
+
+    --dm-project-gradient1: #f1f1f134;
+    --dm-project-gradient2: #f1f1f1;
+    --dm-project-gradient4: #f1f1f134;
+
+
+    --dm-green-transparent: transparent;
+
+    /* images */
+    --dm-bg-image1: url("media/background-gradient5.png");
+    --dm-bg-image2: url("media/background-gradient6.png");
+    --dm-bg-image3: url();
+    --dm-bg-image4: url("media/background-gradient7.png");
 }
