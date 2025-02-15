@@ -268,7 +268,6 @@ a:active {
 
 .page-footer p1 {
   font-size: 12px;
-  padding: 5px;
 }
 
 .page-header-content {
@@ -419,7 +418,8 @@ a:active {
   margin: auto;
   display: flex;
   flex-direction: column;
-  max-width: 90%;
+  width: 100%;
+  max-width: 1500px;
 }
 
 .info-showcase img {
@@ -1050,12 +1050,6 @@ li {
   margin: auto;
 }
 
-.info-text {
-  max-width: 70%;
-  margin: auto;
-  text-align: center;
-}
-
 .info-showcase .description-text {
   border-style: solid;
   border-width: 5px;
@@ -1072,6 +1066,18 @@ li {
   border-radius: 10px;
   padding: 20px;
   background-color: var(--dm-green-transparent);
+  text-align: center;
+}
+
+.info-showcase .contact-text {
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--dm-green);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--dm-green-transparent);
+  text-align: center;
+  margin: auto;
 }
 
 .description-text a {
@@ -1215,24 +1221,6 @@ li {
   .column {
     flex-basis: 100%;
     /* Change the flex-basis to 100% to make items stack vertically */
-  }
-
-  .info-text {
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    max-width: 90%;
-  }
-
-  .info-text {
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .info-showcase .info-text {
-    padding: 10px;
   }
 
   .info-showcase .description-text {
