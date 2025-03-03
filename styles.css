@@ -645,6 +645,13 @@ a:active {
   background-size: cover;
 }
 
+#gallery-button-2024 {
+  background: linear-gradient(to bottom, var(--dm-project-gradient1), var(--dm-project-gradient2)),
+    linear-gradient(to right, var(--dm-project-gradient1), var(--dm-project-gradient4) 20%, var(--dm-project-gradient2) 60%),
+    url("media/3d/2024/abell39-1.webp") no-repeat left center;
+  background-size: cover;
+}
+
 #gallery-button-2023 {
   background: linear-gradient(to bottom, var(--dm-project-gradient1), var(--dm-project-gradient2)),
     linear-gradient(to right, var(--dm-project-gradient1), var(--dm-project-gradient4) 20%, var(--dm-project-gradient2) 60%),
