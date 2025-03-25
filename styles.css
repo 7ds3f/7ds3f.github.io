@@ -492,6 +492,10 @@ a:active {
   overflow: hidden;
 }
 
+.collapsible .software-icons {
+  transform: translate(0px, -25px);
+}
+
 .gallery-collapsible {
   border-style: solid;
   border-width: 5px;
@@ -939,8 +943,17 @@ li {
   padding: 5px;
 }
 
+.software-icons {
+  transform: translate(0px, -10px);
+  position: absolute;
+  padding: 10px;
+  font-size: 40px;
+  width: fit-content;
+}
+
 .button-text-container {
   padding: 20px;
+  width: fit-content;
   max-width: 100%;
   margin-left: auto;
 }
@@ -1293,6 +1306,10 @@ li {
   .about-skills-container {
     padding-right: 0px;
   }
+
+  .software-icons {
+    display: none;
+  }
 }
 
 .code-border {
@@ -1371,3 +1388,55 @@ pre[class*="language-"].line-numbers>code {
   padding-right: 0.8em;
   text-align: right;
 }
+
+/* The .ib and .ibc classes included below contain the minimum
+ * necessary CSS properties for icon display. Additional size,
+ * transform, and animation styles are available in icon-blender.css
+ * from https://github.com/icon-blender/icon-blender
+ *
+ * LICENSES
+ * BoxIcons: CC BY 4.0
+ * Simple Icons: CC0 1.0
+ * VSCode Icons: MIT
+ */
+
+ .ib::before,
+ .ibc::before{
+   display: inline-block;
+   height: 1em;
+   width: 1em;
+   vertical-align: -.125em;
+   content:'';
+ }
+ 
+ .ib::before{
+   background: currentColor;
+   mask-image: var(--url);
+   mask-repeat: no-repeat;
+   mask-position: center;
+   -webkit-mask-image: var(--url);
+   -webkit-mask-repeat: no-repeat;
+   -webkit-mask-position: center;
+ }
+ 
+ .ibc::before{
+   background-image: var(--url);
+   background-size: contain;
+   background-position: 50% 50%;
+   background-repeat:no-repeat;
+ }
+ 
+ /* Html: <i class="ib bx-bxl-blender"></i> */
+ .bx-bxl-blender{
+   --url: url('data:image/svg+xml,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3e%3cpath d=%22M12.427 13.011c.037-.667.363-1.254.856-1.671a2.855 2.855 0 0 1 1.844-.66c.71 0 1.36.25 1.845.66c.492.417.819 1.005.856 1.671c.038.686-.237 1.323-.721 1.795a2.829 2.829 0 0 1-1.979.782a2.83 2.83 0 0 1-1.981-.782c-.483-.472-.759-1.109-.72-1.795z%22 fill=%22currentColor%22/%3e%3cpath d=%22M8.124 14.361c.005.26.089.767.213 1.164a6.156 6.156 0 0 0 1.328 2.299a6.833 6.833 0 0 0 2.323 1.667a7.465 7.465 0 0 0 3.05.635a7.495 7.495 0 0 0 3.051-.645a6.913 6.913 0 0 0 2.321-1.675a6.196 6.196 0 0 0 1.326-2.303a5.76 5.76 0 0 0 .25-1.285a5.942 5.942 0 0 0-.888-3.594a6.496 6.496 0 0 0-1.545-1.703l.001-.001l-6.249-4.799l-.016-.014c-.411-.314-1.101-.313-1.551.002c-.457.319-.508.846-.104 1.18l-.001.001l2.606 2.121l-7.943.009h-.012c-.656 0-1.287.432-1.412.976c-.128.555.318 1.015 1.001 1.017l-.001.003l4.027-.008l-7.188 5.516l-.027.021c-.677.519-.896 1.382-.47 1.929c.434.556 1.354.556 2.04.002l3.922-3.209c.001 0-.056.433-.052.694zm10.078 1.45c-.808.824-1.938 1.291-3.163 1.293c-1.226.002-2.356-.461-3.165-1.283a3.739 3.739 0 0 1-.864-1.352a3.503 3.503 0 0 1-.199-1.511c.044-.505.193-.987.434-1.422c.236-.429.562-.815.962-1.144a4.477 4.477 0 0 1 2.832-.988a4.478 4.478 0 0 1 2.832.98c.399.326.725.711.961 1.139c.24.436.39.916.434 1.421a3.52 3.52 0 0 1-.198 1.511a3.804 3.804 0 0 1-.866 1.356z%22 fill=%22currentColor%22/%3e%3c/svg%3e');
+ }
+ 
+ /* Html: <i class="ib simple-icons-houdini"></i> */
+ .simple-icons-houdini{
+   --url: url('data:image/svg+xml,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3e%3cpath d=%22M0 19.635V24h3.824A8.662 8.662 0 0 1 0 19.635zm16.042-4.555c0-4.037-3.253-7.92-8.111-8.089C4.483 6.873 1.801 8.136 0 10.005v4.209c1.224-3.549 4.595-5.158 7.419-5.128c3.531.041 6.251 2.703 6.275 5.72c0 2.878-1.183 4.992-4.436 5.516c-1.774.296-4.548-.754-4.436-3.434c.065-1.381 1.138-2.162 2.366-2.106c-1.207 1.618.39 2.801 1.52 2.561a2.51 2.51 0 0 0 1.966-2.502c0-1.017-.958-2.662-3.333-2.6c-2.936.068-4.785 2.183-4.85 4.797c-.071 3.28 3.007 5.457 6.174 5.483c4.633.059 7.395-2.984 7.377-7.441zM0 0v6.906a12.855 12.855 0 0 1 7.931-2.609c6.801 0 11.134 4.762 11.131 10.765c0 4.17-1.946 7.308-4.995 8.938H24V0H0z%22 fill=%22currentColor%22/%3e%3c/svg%3e');
+ }
+ 
+ /* Html: <i class="ibc vscode-icons-file-type-maya"></i> */
+ .vscode-icons-file-type-maya{
+   --url: url('data:image/svg+xml,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3e%3cdefs%3e%3clinearGradient id=%22IconifyId-195ce20eaa3-1c837a-2724%22 x1=%22-611.348%22 y1=%22-67.488%22 x2=%22-600.272%22 y2=%22-65.335%22 gradientTransform=%22matrix%281.437 0 0 -1.437 894.417 -82.292%29%22 gradientUnits=%22userSpaceOnUse%22%3e%3cstop offset=%220%22 stop-color=%22%230f6067%22/%3e%3cstop offset=%22.5%22 stop-color=%22%2305abac%22/%3e%3cstop offset=%221%22 stop-color=%22%2358bec4%22/%3e%3c/linearGradient%3e%3clinearGradient id=%22IconifyId-195ce20eaa3-1c837a-2725%22 x1=%22-603.594%22 y1=%22-77.699%22 x2=%22-602.011%22 y2=%22-59.604%22 gradientTransform=%22matrix%281.437 0 0 -1.437 894.417 -82.292%29%22 gradientUnits=%22userSpaceOnUse%22%3e%3cstop offset=%220%22 stop-color=%22%23117c83%22/%3e%3cstop offset=%22.5%22 stop-color=%22%2321b5b5%22/%3e%3cstop offset=%221%22 stop-color=%22%237ed4d4%22/%3e%3c/linearGradient%3e%3clinearGradient id=%22IconifyId-195ce20eaa3-1c837a-2726%22 x1=%22-612.757%22 y1=%22-59.906%22 x2=%22-616.934%22 y2=%22-72.76%22 gradientTransform=%22matrix%281.437 0 0 -1.437 894.417 -82.292%29%22 gradientUnits=%22userSpaceOnUse%22%3e%3cstop offset=%220%22 stop-color=%22%239accd3%22/%3e%3cstop offset=%22.5%22 stop-color=%22%2372aeb3%22/%3e%3cstop offset=%221%22 stop-color=%22%23317d7f%22/%3e%3c/linearGradient%3e%3clinearGradient id=%22IconifyId-195ce20eaa3-1c837a-2727%22 x1=%22-621.851%22 y1=%22-74.579%22 x2=%22-614.84%22 y2=%22-72.301%22 gradientTransform=%22matrix%281.437 0 0 -1.437 894.417 -82.292%29%22 gradientUnits=%22userSpaceOnUse%22%3e%3cstop offset=%220%22 stop-color=%22%2321626e%22/%3e%3cstop offset=%22.5%22 stop-color=%22%23157c84%22/%3e%3cstop offset=%221%22 stop-color=%22%2303a3a5%22/%3e%3c/linearGradient%3e%3clinearGradient id=%22IconifyId-195ce20eaa3-1c837a-2728%22 x1=%22-616.369%22 y1=%22-64.469%22 x2=%22-625.34%22 y2=%22-72.835%22 gradientTransform=%22matrix%281.437 0 0 -1.437 894.417 -82.292%29%22 gradientUnits=%22userSpaceOnUse%22%3e%3cstop offset=%220%22 stop-color=%22%230b7c81%22/%3e%3cstop offset=%22.5%22 stop-color=%22%23068d90%22/%3e%3cstop offset=%221%22 stop-color=%22%2316b1b1%22/%3e%3c/linearGradient%3e%3clinearGradient id=%22IconifyId-195ce20eaa3-1c837a-2729%22 x1=%22-608.072%22 y1=%22-74.678%22 x2=%22-603.488%22 y2=%22-70.966%22 gradientTransform=%22matrix%281.437 0 0 -1.437 894.417 -82.292%29%22 gradientUnits=%22userSpaceOnUse%22%3e%3cstop offset=%220%22 stop-color=%22%230a8a8f%22/%3e%3cstop offset=%22.5%22 stop-color=%22%230f7c82%22/%3e%3cstop offset=%221%22 stop-color=%22%231a5964%22/%3e%3c/linearGradient%3e%3clinearGradient id=%22IconifyId-195ce20eaa3-1c837a-2730%22 x1=%22-601.134%22 y1=%22-70.113%22 x2=%22-606.008%22 y2=%22-67.067%22 gradientTransform=%22matrix%281.437 0 0 -1.437 894.417 -82.292%29%22 gradientUnits=%22userSpaceOnUse%22%3e%3cstop offset=%220%22 stop-color=%22%23256a77%22/%3e%3cstop offset=%22.5%22 stop-color=%22%230d9499%22/%3e%3cstop offset=%221%22 stop-color=%22%2306a0a2%22/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath d=%22M21.6 3.462H30L18.767 24.211s-1.893-5.5-2.706-7.459%22 fill=%22url%28%23IconifyId-195ce20eaa3-1c837a-2724%29%22/%3e%3cpath d=%22M23.669 29.118H30V3.462c-.005 13.407-5.64 25.656-6.331 25.656z%22 fill=%22url%28%23IconifyId-195ce20eaa3-1c837a-2725%29%22/%3e%3cpath d=%22M18.767 24.211h-5.226L2 3.462c2.047-.26 6.135-.611 8.16-.776z%22 fill=%22url%28%23IconifyId-195ce20eaa3-1c837a-2726%29%22/%3e%3cpath d=%22M8.693 16.019C6.96 22.866 1.995 29.32 2 29.314c5.752 0 6.991-.835 6.991-1.276V16.54c-.101-.17-.197-.346-.298-.521z%22 fill=%22url%28%23IconifyId-195ce20eaa3-1c837a-2727%29%22/%3e%3cpath d=%22M2 3.462v25.852c3.147-5.2 4.981-8.6 6.6-13.45C4.6 8.794 2 3.462 2 3.462z%22 fill=%22url%28%23IconifyId-195ce20eaa3-1c837a-2728%29%22/%3e%3cpath fill=%22url%28%23IconifyId-195ce20eaa3-1c837a-2729%29%22 d=%22M23.233 28.102l.436 1.016V15.647l-.436.728%22/%3e%3cpath d=%22M23.647 15.673v13.4l.016.043c.452 0 6.332-14.5 6.332-25.656c0 .002-3.589 7.487-6.348 12.213z%22 fill=%22url%28%23IconifyId-195ce20eaa3-1c837a-2730%29%22/%3e%3c/svg%3e');
+ }
