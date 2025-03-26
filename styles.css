@@ -19,17 +19,30 @@
   font-style: normal;
 }
 
-body {
+/* body {
   background-color: var(--dm-background-gradient-end);
   height: 100vh;
   background-image: var(--dm-bg-image4), var(--dm-bg-image3), var(--dm-bg-image2), linear-gradient(var(--dm-background-gradient-start), var(--dm-background-gradient-end) 100%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
+} */
+
+body {
+  background-color: var(--dm-background-gradient-end);
+  height: 100vh;
+  background-image: var(--dm-bg-image3), var(--dm-bg-image2), linear-gradient(var(--dm-background-gradient-start), var(--dm-background-gradient-end) 100%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
-#about-page-body {
+/* #about-page-body {
   background-image: var(--dm-bg-image4), var(--dm-bg-image3), var(--dm-bg-image2), linear-gradient(var(--dm-background-gradient-start), var(--dm-background-gradient-end) 100%);
+} */
+
+#about-page-body {
+  background-image: var(--dm-bg-image3), var(--dm-bg-image2), linear-gradient(var(--dm-background-gradient-start), var(--dm-background-gradient-end) 100%);
 }
 
 #contact-page-body {
@@ -1247,9 +1260,14 @@ li {
 }
 
 @media screen and (max-aspect-ratio: 16/9) {
-  body {
+  /* body {
     background-size: fit;
     background-image: var(--dm-bg-image1), linear-gradient(var(--dm-background-gradient-start), var(--dm-background-gradient-end) 100%);
+  } */
+
+  body {
+    background-size: fit;
+    background-image: linear-gradient(var(--dm-background-gradient-start), var(--dm-background-gradient-end) 100%);
   }
 
   #contact-page-body {

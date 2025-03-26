@@ -25,6 +25,7 @@ function showDivById (id) {
 
 function lightToggle() {
   const body = document.documentElement;
+  var selfPortrait = document.getElementsByClassName("portrait-wrapper")[0];
 
   // Toggle light mode class
   body.classList.toggle('light-mode');
@@ -32,8 +33,10 @@ function lightToggle() {
   // Save user preference
   if (body.classList.contains('light-mode')) {
     localStorage.setItem('theme', 'light');
+    selfPortrait.children[0].src = "media/self-portrait-lm.png";
   } else {
     localStorage.setItem('theme', 'dark');
+    selfPortrait.children[0].src = "media/self-portrait.png";
   }
 }
 
@@ -41,6 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Apply saved theme on page load
   if (localStorage.getItem('theme') === 'light') {
     document.documentElement.classList.add('light-mode');
+    var selfPortrait = document.getElementsByClassName("portrait-wrapper")[0];
+    selfPortrait.children[0].src = "media/self-portrait-lm.png";
   }
   
   showDivById("about");
