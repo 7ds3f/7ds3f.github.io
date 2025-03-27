@@ -164,6 +164,19 @@ a:active {
   }
 }
 
+.portfolio-splash {
+  width: 100%;
+  margin: auto;
+  max-width: 2000px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.portfolio-splash img {
+  width: 100%;
+  margin: auto;
+}
+
 .home-center {
   position: absolute;
   top: 50%;
