@@ -34,6 +34,19 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
 
+// 3D splash image handler
+function updateImage() {
+  const img = document.getElementById("splash-image");
+  if (window.matchMedia("(max-aspect-ratio: 16/9)").matches) {
+      img.src = "media/3d/mp3_player_comp_vert.png";
+  } else {
+      img.src = "media/3d/mp3_player_comp.png";
+  }
+}
+
+window.addEventListener("resize", updateImage);
+window.addEventListener("load", updateImage);
+
 // On page load
 document.addEventListener("DOMContentLoaded", () => {
   // Apply saved theme on page load
