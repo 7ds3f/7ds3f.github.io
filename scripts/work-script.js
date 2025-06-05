@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Fade in content
-  showDivById("code-projects");
+  showDivById("design-projects");
 
   // Display scroll button
   let scroll_button = document.getElementById("scroll-container");
@@ -64,9 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Project switch handler
   const leftButton = document.getElementById("switch-left");
   const rightButton = document.getElementById("switch-right");
-  l_selected = true;
-  r_selected = false;
-  leftButton.classList.toggle("active");
+  l_selected = false;
+  r_selected = true;
+  rightButton.classList.toggle("active");
 
   leftButton.addEventListener("mousedown", () => {
     if (!l_selected) {
