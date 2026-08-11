@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8" />
   <title>Home | Will Bordman</title>
   <meta name="description" content="Will Bordman's Professional Portolio">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -23,37 +24,33 @@
       <a HREF="./">willbordman.com</a>
     </div>
   </div>
-  <div class="home-center">
-    <div class="home-menu-container">
-      <p1>Welcome to the site for</p1>
-      <div class="home-title">
+  <section class="hero">
+    <div class="hero-bg">
+      <img class="hero-img hero-img-dark" src="media/3d/2023/eve-1.jpg" alt="3D render by Will Bordman" />
+      <img class="hero-img hero-img-light" src="media/3d/old/lighthouse-1.jpg" alt="3D render by Will Bordman" />
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
+      <p1 class="hero-eyebrow">Welcome to the site for</p1>
+      <div class="home-title hero-title">
         <div class="gradient-slide"><h1>Will Bordman.</h1></div>
         <div class="sheen-slide"><h1>Will Bordman.</h1></div>
         <h1>Will Bordman.</h1>
       </div>
-      <div id="links">
-        <!-- <a HREF="./about">| About</a> -->
-        <a HREF="./contact">| Contact</a>
-        <a HREF="./work">| Work</a>
+      <p1 class="hero-tagline">Programmer &amp; 3D Artist</p1>
+      <div class="hero-links">
+        <a HREF="./work">Work</a>
+        <a HREF="./contact">Contact</a>
       </div>
     </div>
-    <div class="home-icon-border">
-      <div class="icon-text-border" id="home-titles">
-        <p1>Programmer & 3D Artist</p1>
-      </div>
+    <span class="hero-credit hero-credit-dark">"Eve" · Blender</span>
+    <span class="hero-credit hero-credit-light">"Lighthouse" · Blender</span>
+    <div class="hero-icons" aria-hidden="true">
+      <img id="code-animation" class="hero-icon" src="media/code.webp" alt="" loading="lazy" />
+      <p1>+</p1>
+      <img id="square-animation" class="hero-icon" src="media/square.webp" alt="" loading="lazy" />
     </div>
-    <div class="home-icon-border">
-      <div class="icon-container">
-        <img id="code-animation" src="media/code.webp", loading="lazy"/>
-      </div>
-      <div class="icon-text-border">
-        <p1>+</p1>
-      </div>
-      <div class="icon-container">
-        <img id="square-animation" src="media/square.webp", loading="lazy"/>
-      </div>
-    </div>
-  </div>
+  </section>
   <div class="light-toggle-container">
     <button class="light-toggle" onclick="lightToggle()">
       <i class="fa fa-moon-o" aria-hidden="true"></i>

@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta charset="utf-8" />
   <title>Work | Will Bordman</title>
   <meta name="description" content="Will Bordman's Project Archive">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,483 +42,348 @@
       <h1>Work.</h1>
     </div>
     <div class="switch">
-      <button class="switch-btn" id="switch-left">Coding</button>
-      <button class="switch-btn" id="switch-right">3D Design</button>
+      <button class="switch-btn" id="switch-left">Software</button>
+      <button class="switch-btn" id="switch-right">Design</button>
     </div>
   </div>
   <div class="media-container">
     <!--CODING-->
     <div class="media-display" id="code-projects" hidden>
-      <div class="code-showcase">
-        <div class="description-text">
-          <p1>Favorite projects. Click on a project to learn more.</p1>
+      <section class="projects-section">
+        <div class="projects-heading">
+          <p1>Selected projects. Click a card to expand.</p1>
         </div>
-        <div class="divider-container"></div>
-        <button id="interactive-data-viz" type="button" class="collapsible">
-          <div class="project-info-container">
-            <div class="project-info">HTML, CSS, JS</div>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">Streaming Service Data Visualizations</div>
-            <div class="button-description">
-              <p1>Compare video streaming services by content and cost history</p1>
+
+        <article class="project repo">
+          <button class="project-head repo-head" type="button" aria-expanded="false">
+            <span class="repo-thumb"><img src="media/code/interactive-data-viz/interactive-data-viz-cover.jpg" alt="" loading="lazy" /></span>
+            <span class="repo-head-text">
+            <span class="repo-title">Streaming Service Data Visualizations</span>
+            <span class="repo-desc">Compare video streaming services by content and cost history.</span>
+            <div class="repo-chips">
+              <span class="repo-chip">HTML</span>
+              <span class="repo-chip">CSS</span>
+              <span class="repo-chip">JavaScript</span>
+              <span class="repo-chip">Chart.js</span>
             </div>
-          </div>
-        </button>
-        <div id="interactive-data-viz-cont" class="project-container" hidden>
-          <div class="row">
-            <div class="description-text">
-              <p1>This was a joint project between myself and a peer for RPI's Interactive Data Visualization course
-                (COMM 4880).
-                The goal was to create data visualizations which would enable the easy comparison of many video
-                streaming services.
-                Data we considered included the cost, genre-distribution, content-overlap, and features of each
-                streaming service.
-                The work I completed for this project includes the two data visualizations shown below and general
-                website
-                design. View the project's website <a target="_blank" rel="noopener noreferrer"
-                  HREF="https://sites.google.com/view/idv-project/home">HERE.</a> Please note that the data displayed is
-                RANDOMLY generated, and the website
-                is NOT optimized for mobile devices.</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Website Home Page</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/code/interactive-data-viz/interactive-data-viz-website-home.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Website Visualizations Page</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/code/interactive-data-viz/interactive-data-viz-website-viz.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="description-text">
-              <p1>Both of these charts use the chart.js library.</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Content & Genre Visualization</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/code/interactive-data-viz/interactive-data-viz-genre-viz.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-left">
-              <p1>
-                < View source <a target="_blank" rel="noopener noreferrer" HREF="https://github.com/7ds3f/genre-viz">
-                  HERE.</a> >
-              </p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Cost Visualization</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/code/interactive-data-viz/interactive-data-viz-cost-viz.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-left">
-              <p1>
-                < View source <a target="_blank" rel="noopener noreferrer" HREF="https://github.com/7ds3f/cost-viz">
-                  HERE.</a> >
-              </p1>
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div>
-      <div class="code-showcase">
-        <div class="divider-container"></div>
-        <button id="rpi-campus-map" type="button" class="collapsible">
-          <div class="project-info-container">
-            <div class="project-info">Java</div>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">RPI Campus Pathfinder</div>
-            <div class="button-description">
-              <p1>Get the shortest path to anywhere on campus with Dijkstra's algorithm</p1>
-            </div>
-          </div>
-        </button>
-        <div id="rpi-campus-map-cont" class="project-container" hidden>
-          <div class="row">
-            <div class="description-text">
-              <p1>This was a homework assignment I completed for RPI's Principles of Software course (CSCI 2600).
-                The goal was to use a previously implemented Graph ADT (abstract data type) to store location data for
-                buildings
-                on the RPI campus. Using Dijkstra's algorithm, the program is able to calculate the shortest
-                path between any two buildings on the campus. The program accepts the names of buildings or building
-                ID numbers as shown on the map below. The program supports the following input commands: "b" will list
-                all buildings,
-                "r" will find the path between any two buildings, and "q" will quit the program. When implementing the
-                functions
-                for this program, I had to adhere to the Model-View-Control design pattern because modular design,
-                writing code for
-                reuse, and design patterns were major focus points for this assignment. I also wrote several unit tests
-                for each of this program's
-                functions using JUnit 4.</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>RPI Campus Map (cropped)</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/code/rpi-campus-map/rpi-campus-map-map.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="column">
-              <div class="subtitle-text-center-col">
-                <p1>List Buildings & IDs Feature</p1>
+            </span>
+            <span class="project-head-icon" aria-hidden="true"></span>
+          </button>
+          <a class="repo-source" href="https://sites.google.com/view/idv-project/home" target="_blank"
+            rel="noopener noreferrer">View project →</a>
+          <div class="project-body" hidden>
+            <div class="repo-readme">
+              <p1>A joint project with a peer for RPI's Interactive Data Visualization course (COMM 4880). The goal was
+                to build visualizations that make it easy to compare many video streaming services — by cost,
+                genre distribution, content overlap, and features. My contribution includes the two visualizations
+                below and the general site design. Note the displayed data is randomly generated, and the site isn't
+                optimized for mobile.</p1>
+              <div class="repo-shots">
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="Website Home Page"
+                      src="media/code/interactive-data-viz/interactive-data-viz-website-home.jpg" loading="lazy"
+                      alt="Website home page" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">Website Home Page</span></figcaption>
+                </figure>
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="Website Visualizations Page"
+                      src="media/code/interactive-data-viz/interactive-data-viz-website-viz.jpg" loading="lazy"
+                      alt="Website visualizations page" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">Website Visualizations Page</span>
+                  </figcaption>
+                </figure>
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="Content & Genre Visualization"
+                      src="media/code/interactive-data-viz/interactive-data-viz-genre-viz.jpg" loading="lazy"
+                      alt="Content and genre visualization" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">Content &amp; Genre Visualization</span>
+                    <span class="stream-note"><a href="https://github.com/7ds3f/genre-viz" target="_blank"
+                        rel="noopener noreferrer">View source ↗</a></span>
+                  </figcaption>
+                </figure>
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="Cost Visualization"
+                      src="media/code/interactive-data-viz/interactive-data-viz-cost-viz.jpg" loading="lazy"
+                      alt="Cost visualization" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">Cost Visualization</span>
+                    <span class="stream-note"><a href="https://github.com/7ds3f/cost-viz" target="_blank"
+                        rel="noopener noreferrer">View source ↗</a></span>
+                  </figcaption>
+                </figure>
               </div>
-              <div class="img-wrapper">
-                <img src="media/code/rpi-campus-map/rpi-campus-map-buildings.jpg" loading="lazy" />
+              <p1>Both charts are built with the Chart.js library.</p1>
+            </div>
+          </div>
+        </article>
+
+        <article class="project repo">
+          <button class="project-head repo-head" type="button" aria-expanded="false">
+            <span class="repo-thumb"><img src="media/code/rpi-campus-map/rpi-campus-map-cover.jpg" alt="" loading="lazy" /></span>
+            <span class="repo-head-text">
+            <span class="repo-title">RPI Campus Pathfinder</span>
+            <span class="repo-desc">Get the shortest path to anywhere on campus with Dijkstra's algorithm.</span>
+            <div class="repo-chips">
+              <span class="repo-chip">Java</span>
+              <span class="repo-chip">Dijkstra's</span>
+              <span class="repo-chip">JUnit 4</span>
+              <span class="repo-chip">MVC</span>
+            </div>
+            </span>
+            <span class="project-head-icon" aria-hidden="true"></span>
+          </button>
+          <a class="repo-source" href="https://drive.proton.me/urls/R8Q6P3286R#rdgbXT8tLoM1" target="_blank"
+            rel="noopener noreferrer">View assignment →</a>
+          <div class="project-body" hidden>
+            <div class="repo-readme">
+              <p1>A homework assignment for RPI's Principles of Software course (CSCI 2600). Using a previously
+                implemented Graph ADT to store building locations on the RPI campus, the program computes the shortest
+                path between any two buildings with Dijkstra's algorithm. It accepts building names or ID numbers and
+                supports commands: "b" lists all buildings, "r" finds a path between two buildings, and "q" quits. I
+                built it against the Model-View-Controller pattern — modular design, code reuse, and design patterns
+                were the focus — and wrote unit tests for each function with JUnit 4.</p1>
+              <div class="repo-shots">
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="RPI Campus Map (cropped)" src="media/code/rpi-campus-map/rpi-campus-map-map.jpg"
+                      loading="lazy" alt="RPI campus map" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">RPI Campus Map (cropped)</span></figcaption>
+                </figure>
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="List Buildings &amp; IDs"
+                      src="media/code/rpi-campus-map/rpi-campus-map-buildings.jpg" loading="lazy"
+                      alt="List buildings and IDs feature" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">List Buildings &amp; IDs</span></figcaption>
+                </figure>
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="Pathfinding Example" src="media/code/rpi-campus-map/rpi-campus-map-path-1.jpg"
+                      loading="lazy" alt="Pathfinding example" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">Pathfinding Example</span></figcaption>
+                </figure>
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="Pathfinding Example" src="media/code/rpi-campus-map/rpi-campus-map-path-2.jpg"
+                      loading="lazy" alt="Pathfinding example" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">Pathfinding Example</span></figcaption>
+                </figure>
               </div>
+              <p1>I enjoyed this one because it produced a genuinely useful tool for RPI students, and it was great
+                practice writing correct code that's logically organized, readable, and modular.</p1>
             </div>
-            <div class="column">
-              <div class="subtitle-text-center-col">
-                <p1>Some Pathfinding Examples</p1>
+          </div>
+        </article>
+
+        <article class="project repo">
+          <button class="project-head repo-head" type="button" aria-expanded="false">
+            <span class="repo-thumb"><img src="media/code/n-queens/n-queens-cover.jpg" alt="" loading="lazy" /></span>
+            <span class="repo-head-text">
+            <span class="repo-title">N-Queens Solver</span>
+            <span class="repo-desc">Solve the N-Queens problem for an m × n board with a multi-process solution.</span>
+            <div class="repo-chips">
+              <span class="repo-chip">C</span>
+              <span class="repo-chip">fork()</span>
+              <span class="repo-chip">Backtracking</span>
+              <span class="repo-chip">waitpid()</span>
+            </div>
+            </span>
+            <span class="project-head-icon" aria-hidden="true"></span>
+          </button>
+          <a class="repo-source" href="https://drive.proton.me/urls/W5RSPFC8AG#ZAotJt6HAN94" target="_blank"
+            rel="noopener noreferrer">View assignment →</a>
+          <div class="project-body" hidden>
+            <div class="repo-readme">
+              <p1>A homework assignment for RPI's Operating Systems course (CSCI 4210): a multi-process solution to a
+                variation of the N-Queens problem. Given an m × n board, the program reports the number of solutions
+                using brute force with backtracking — fork() spawns a new process for every potential queen placement.
+                Read more about the N-Queens problem <a href="https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/#"
+                  target="_blank" rel="noopener noreferrer">here</a>. It also compiles with two precompiler flags:
+                "QUIET" trims output to the first two and final lines in the top-level parent, and "NO_PARALLEL" uses a
+                waitpid() call to prevent child processes from running in parallel.</p1>
+              <div class="repo-shots">
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="Algorithm Diagram" src="media/code/n-queens/n-queens-algorithm.jpg"
+                      loading="lazy" alt="Algorithm diagram" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">Algorithm Diagram</span></figcaption>
+                </figure>
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="Terminal Output" src="media/code/n-queens/n-queens-terminal-2.jpg" loading="lazy"
+                      alt="Terminal output" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">Terminal Output</span></figcaption>
+                </figure>
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="Terminal Output" src="media/code/n-queens/n-queens-terminal-1.jpg" loading="lazy"
+                      alt="Terminal output" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">Terminal Output</span></figcaption>
+                </figure>
               </div>
-              <div class="img-wrapper">
-                <img src="media/code/rpi-campus-map/rpi-campus-map-path-1.jpg" loading="lazy" />
+              <p1>A valuable assignment — it taught me how to use a waitpid() call effectively to control child
+                processes.</p1>
+            </div>
+          </div>
+        </article>
+
+        <article class="project repo">
+          <button class="project-head repo-head" type="button" aria-expanded="false">
+            <span class="repo-thumb"><img src="media/code/spotify-bot/spotify-bot-cover.jpg" alt="" loading="lazy" /></span>
+            <span class="repo-head-text">
+            <span class="repo-title">Grayscale Spotify Playlist Generator</span>
+            <span class="repo-desc">Generate Spotify playlists containing only songs with black &amp; white album
+              covers.</span>
+            <div class="repo-chips">
+              <span class="repo-chip">Python</span>
+              <span class="repo-chip">Spotipy</span>
+              <span class="repo-chip">Pillow</span>
+              <span class="repo-chip">Spotify API</span>
+            </div>
+            </span>
+            <span class="project-head-icon" aria-hidden="true"></span>
+          </button>
+          <a class="repo-source" href="https://github.com/7ds3f/grayscale-pl-gen" target="_blank"
+            rel="noopener noreferrer">View source →</a>
+          <div class="project-body" hidden>
+            <div class="repo-readme">
+              <p1>A personal project to learn the Spotify API and build a customizable alternative to Spotify's
+                auto-generated playlists. Given a list of genres and artists, the program populates a playlist from
+                Spotify's recommendation system, adding a song only if (1) its album cover is grayscale and (2) it has
+                an appropriate "energy" level for the time of day — lower energy in the morning, higher at
+                night. If three iterations pass without a match, it picks different artists/genres and raises the
+                energy cutoffs. Built with the Spotipy library.</p1>
+              <div class="repo-shots">
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="Terminal Output" src="media/code/spotify-bot/spotify-bot-terminal.jpg"
+                      loading="lazy" alt="Terminal output" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">Terminal Output</span></figcaption>
+                </figure>
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="Spotify Playlist" src="media/code/spotify-bot/spotify-bot-spotify.jpg"
+                      loading="lazy" alt="Generated Spotify playlist" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">Spotify Playlist</span></figcaption>
+                </figure>
               </div>
-              <div class="img-wrapper">
-                <img src="media/code/rpi-campus-map/rpi-campus-map-path-2.jpg" loading="lazy" />
+              <p1>I used the Pillow library to detect whether an album cover is grayscale. After a cover is downloaded
+                and downscaled, the detect_color_image function below analyzes its color bands to classify it as B&amp;W,
+                grayscale, or color. Some of this analysis is adapted from Stack Exchange (see the source for
+                acknowledgements).</p1>
+              <div class="repo-code">
+                <span class="stream-label">detect_color_image()</span>
+                <div class="source-border">
+                  <div class="code-text">
+                    <pre data-src="https://raw.githubusercontent.com/7ds3f/grayscale-pl-gen/main/image_bw.py"></pre>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-left">
-              <p1>
-                < View assignment <a target="_blank" rel="noopener noreferrer"
-                  HREF="https://drive.proton.me/urls/R8Q6P3286R#rdgbXT8tLoM1">HERE.</a> >
-              </p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="description-text">
-              <p1>I enjoyed this assignment because it resulted in a helpful tool, a valuable piece of software that
-                could be
-                beneficial for all RPI students. It was also a great experience learning how to write correct code which
-                is logically organized,
-                readable, and modular.</p1>
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div>
-      <div class="code-showcase">
-        <div class="divider-container"></div>
-        <button id="n-queen-solver" type="button" class="collapsible">
-          <div class="project-info-container">
-            <div class="project-info">C</div>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">N-Queens Solver</div>
-            <div class="button-description">
-              <p1>Solve the N-Queens problem for an m x n board with this multi-process solution</p1>
-            </div>
-          </div>
-        </button>
-        <div id="n-queen-solver-cont" class="project-container" hidden>
-          <div class="row">
-            <div class="description-text">
-              <p1>This was a homework assignment I completed for RPI's Operating Systems course (CSCI 4210).
-                The assignment was to write a multi-process solution to a variation of the n-Queens problem. Given
-                a board of size m x n, this program will report the number of solutions to the n-Queens problem for
-                that specific board. This solution uses a brute force approach with backtracking: fork() is called and
-                a new process is created for every potential queen placement. Read more about the n-Queens problem
-                <a target="_blank" rel="noopener noreferrer"
-                  HREF="https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/#">HERE.</a>
-                The program can also be compiled with two different precompiler flags. If compiled with the "QUIET"
-                flag,
-                the program displays only the first two lines and the final line of output in the top-level parent
-                process.
-                If compiled with the "NO_PARALLEL" flag, the program will use a waitpid() call, which will prevent child
-                processes from running in parallel.
-              </p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column">
-              <div class="subtitle-text-center-col">
-                <p1>Algorithm Diagram</p1>
-              </div>
-              <div class="img-wrapper">
-                <img src="media/code/n-queens/n-queens-algorithm.jpg" loading="lazy" />
-              </div>
-            </div>
-            <div class="column">
-              <div class="subtitle-text-center-col">
-                <p1>Terminal Output</p1>
-              </div>
-              <div class="img-wrapper">
-                <img src="media/code/n-queens/n-queens-terminal-2.jpg" loading="lazy" />
-              </div>
-              <div class="img-wrapper">
-                <img src="media/code/n-queens/n-queens-terminal-1.jpg" loading="lazy" />
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-left">
-              <p1>
-                < View assignment <a target="_blank" rel="noopener noreferrer"
-                  HREF="https://drive.proton.me/urls/W5RSPFC8AG#ZAotJt6HAN94">HERE.</a> >
-              </p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="description-text">
-              <p1>This was a valuable assignment because it taught me how to use a waitpid() call effectively to control
-                child processes.</p1>
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div>
-      <div class="code-showcase">
-        <div class="divider-container"></div>
-        <button id="spotify-bot" type="button" class="collapsible">
-          <div class="project-info-container">
-            <div class="project-info">Python</div>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">Grayscale Spotify Playlist Generator</div>
-            <div class="button-description">
-              <p1>Generate Spotify playlists containing only songs with B&W album covers</p1>
-            </div>
-          </div>
-        </button>
-        <div id="spotify-bot-cont" class="project-container" hidden>
-          <div class="row">
-            <div class="description-text">
-              <p1>This was a personal project with the goal being to learn how to use the Spotify API and to create a
-                customizable
-                alternative to Spotify's auto-generated playlists like Discovery Weekly and the Daily Mixes. Given a
-                list of genres and
-                artists of the user's choosing, this program will populate a playlist with Spotify's recommedation
-                system. The program
-                will add a song only if: (1) its album cover is greyscale, and (2) if it has the appropriate energy
-                level based on the time of day.
-                Spotify generates an "energy" level for every song in its catalog, and this program will add songs with
-                lower "energy" in the morning
-                and songs with higher "energy" in the afternoon/at night. "Energy" represents "a perceptual measure of
-                intensity and activity",
-                according to Spotify's documentation. If the program detects that three iterations have passed without
-                having found any songs
-                that meet this criteria, the program will choose different artists and genres from the given lists for
-                Spotify's recommedation
-                function and raise the required "energy" value cutoffs. I used the Spotipy Python library to access the
-                functions of the Spotify API.</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column">
-              <div class="subtitle-text-center-col">
-                <p1>Terminal Output</p1>
-              </div>
-              <div class="img-wrapper">
-                <img src="media/code/spotify-bot/spotify-bot-terminal.jpg" loading="lazy" />
-              </div>
-            </div>
-            <div class="column">
-              <div class="subtitle-text-center-col">
-                <p1>Spotify Playlist</p1>
-              </div>
-              <div class="img-wrapper">
-                <img src="media/code/spotify-bot/spotify-bot-spotify.jpg" loading="lazy" />
+              <p1>The vibe_check function below determines each track's "energy" using the Spotify API's audio-features
+                endpoint.</p1>
+              <div class="repo-code">
+                <span class="stream-label">vibe_check()</span>
+                <div class="source-border">
+                  <div class="code-text">
+                    <pre data-src="https://raw.githubusercontent.com/7ds3f/grayscale-pl-gen/main/main.py"
+                      data-range="60,80"></pre>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="subtitle-text-left">
-              <p1>
-                View source <a target="_blank" rel="noopener noreferrer"
-                  HREF="https://github.com/7ds3f/grayscale-pl-gen">HERE.</a>
-              </p1>
+        </article>
+
+        <article class="project repo">
+          <button class="project-head repo-head" type="button" aria-expanded="false">
+            <span class="repo-thumb"><img src="media/code/tcp-wordle-server/tcp-wordle-server-cover.jpg" alt="" loading="lazy" /></span>
+            <span class="repo-head-text">
+            <span class="repo-title">TCP Wordle Server</span>
+            <span class="repo-desc">Play the popular Wordle word game with this TCP server and client.</span>
+            <div class="repo-chips">
+              <span class="repo-chip">C</span>
+              <span class="repo-chip">POSIX Threads</span>
+              <span class="repo-chip">TCP Sockets</span>
+              <span class="repo-chip">Mutexes</span>
             </div>
-          </div>
-          <div class="row">
-            <div class="description-text">
-              <p1>I used the Pillow Python library to determine if an album cover is grayscale. After a song's album
-                cover is downloaded and reduced to a lower resolution, the detect_color_image function below analyzes
-                the color bands of the
-                album cover to determine if it is black and white, grayscale, or color. The code for some of this
-                analysis is from Stack Exchange. See the code below
-                for acknowledgements.</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center-col">
-              <p1>detect_color_image Function</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="source-border">
-              <div class="code-text">
-                <pre data-src="https://raw.githubusercontent.com/7ds3f/grayscale-pl-gen/main/image_bw.py"></pre>
+            </span>
+            <span class="project-head-icon" aria-hidden="true"></span>
+          </button>
+          <a class="repo-source" href="https://drive.proton.me/urls/FXEQG5S6BG#EKvkxv2FXhV9" target="_blank"
+            rel="noopener noreferrer">View assignment →</a>
+          <div class="project-body" hidden>
+            <div class="repo-readme">
+              <p1>A homework assignment for RPI's Operating Systems course (CSCI 4210): a single-process,
+                multi-threaded TCP server for the Wordle word game (never played? try it
+                <a href="https://www.nytimes.com/games/wordle" target="_blank" rel="noopener noreferrer">here</a>).
+                A client connects via a port number and gets 6 tries to guess a hidden word; on each guess the server
+                returns an eight-byte packet indicating a correct, incorrect, or invalid word. Because it uses POSIX
+                threads, it handles multiple clients and games in parallel, tracking total valid guesses, wins, and
+                losses in global variables guarded by mutex locks for thread synchronization. Beyond socket(), bind(),
+                and listen() for network setup, I wrote my own Wordle comparison algorithm using hashtables.</p1>
+              <div class="repo-shots">
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="Client Output" src="media/code/tcp-wordle-server/tcp-wordle-server-server.jpg"
+                      loading="lazy" alt="Client output" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">Client Output</span></figcaption>
+                </figure>
+                <figure class="repo-shot">
+                  <div class="feature-media">
+                    <img data-title="Server Output" src="media/code/tcp-wordle-server/tcp-wordle-server-client.jpg"
+                      loading="lazy" alt="Server output" />
+                  </div>
+                  <figcaption class="stream-cap"><span class="stream-label">Server Output</span></figcaption>
+                </figure>
               </div>
+              <p1>My first time working with low-level network functions — I really liked the concept of
+                multi-threaded computing and the obvious benefits it brought to this project.</p1>
             </div>
           </div>
-          <div class="row">
-            <div class="description-text">
-              <p1>Below is the vibe_check function that determines the "energy" values of tracks with Spotify's API's
-                audio
-                features function.</p1>
+        </article>
+
+        <article class="project repo">
+          <button class="project-head repo-head" type="button" aria-expanded="false">
+            <span class="repo-thumb"><img src="media/background.png" alt="" loading="lazy" /></span>
+            <span class="repo-head-text">
+            <span class="repo-title">This Website</span>
+            <span class="repo-desc">willbordman.com — my portfolio, built from scratch.</span>
+            <div class="repo-chips">
+              <span class="repo-chip">HTML</span>
+              <span class="repo-chip">CSS</span>
+              <span class="repo-chip">JavaScript</span>
+            </div>
+            </span>
+            <span class="project-head-icon" aria-hidden="true"></span>
+          </button>
+          <a class="repo-source" href="https://github.com/7ds3f/7ds3f.github.io" target="_blank"
+            rel="noopener noreferrer">View source →</a>
+          <div class="project-body" hidden>
+            <div class="repo-readme">
+              <p1>willbordman.com is the first website I've built from scratch. It's been fun making these pages and
+                aggregating the work I've done over the past few years. Please don't hesitate to contact me if you
+                find any issues — this site is still a work in progress!</p1>
             </div>
           </div>
-          <div class="row">
-            <div class="subtitle-text-center-col">
-              <p1>vibe_check Function</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="source-border">
-              <div class="code-text">
-                <pre data-src="https://raw.githubusercontent.com/7ds3f/grayscale-pl-gen/main/main.py"
-                  data-range="60,80"></pre>
-              </div>
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div>
-      <div class="code-showcase">
-        <div class="divider-container"></div>
-        <button id="tcp-wordle-server" type="button" class="collapsible">
-          <div class="project-info-container">
-            <div class="project-info">C</div>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">TCP Wordle Server</div>
-            <div class="button-description">
-              <p1>Play the popular Wordle word game with this TCP server and client</p1>
-            </div>
-          </div>
-        </button>
-        <div id="tcp-wordle-server-cont" class="project-container" hidden>
-          <div class="row">
-            <div class="description-text">
-              <p1>This was a homework assignment I completed for RPI's Operating Systems course (CSCI 4210).
-                The goal was to implement a single-process multi-threaded TCP server for the Wordle word game.
-                (In case you've never played Wordle, you can play it <a target="_blank" rel="noopener noreferrer"
-                  HREF="https://www.nytimes.com/games/wordle">HERE.</a>)
-                Using a simple client program, a user can connect to the server with a port number. The user will then
-                have 6 tries to guess
-                a hidden word. Upon receiving a guess, the server will return an eight-byte packet to the client
-                depending on whether the user guessed the correct word,
-                guessed an incorrect word, or guessed an invalid word (i.e. a word that doesn't exist). And since the
-                server uses POSIX threads,
-                it is able to handle mutiple client connections and Wordle games in parallel. The server also keeps
-                track of the total number of valid guesses,
-                wins, and losses via global variables; I had to use mutex locks for thread synchronization,
-                since each thread has to update these global variables during gameplay. In addition to learning about
-                thread creation and functions like socket(), bind(), and listen()
-                for network setup, I also had to write my own Wordle algorithm. I used hashtables to compare a user's
-                guess
-                with the hidden word. See the screenshots or assignment PDF below for more details about how these
-                comparisons are displayed. </p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column">
-              <div class="subtitle-text-center-col">
-                <p1>Client Output</p1>
-              </div>
-              <div class="img-wrapper">
-                <img src="media/code/tcp-wordle-server/tcp-wordle-server-server.jpg" loading="lazy" />
-              </div>
-            </div>
-            <div class="column">
-              <div class="subtitle-text-center-col">
-                <p1>Server Output</p1>
-              </div>
-              <div class="img-wrapper">
-                <img src="media/code/tcp-wordle-server/tcp-wordle-server-client.jpg" loading="lazy" />
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-left">
-              <p1>
-                < View assignment <a target="_blank" rel="noopener noreferrer"
-                  HREF="https://drive.proton.me/urls/FXEQG5S6BG#EKvkxv2FXhV9">HERE.</a> >
-              </p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="description-text">
-              <p1>I liked this assignment because it was the first time I had worked with low-level network functions.
-                I also really liked the concept of multi-threaded computing and seeing the obvious benefits it granted
-                when implemented into this project.</p1>
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div>
-      <div class="code-showcase">
-        <div class="divider-container"></div>
-        <button id="my-website" type="button" class="collapsible">
-          <div class="project-info-container">
-            <div class="project-info">HTML, CSS, JS</div>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">This Website</div>
-            <div class="button-description">
-              <p1>willbordman.com</p1>
-            </div>
-          </div>
-        </button>
-        <div id="my-website-cont" class="project-container" hidden>
-          <div class="row">
-            <div class="description-text">
-              <p1>willbordman.com is the first website I've built from scratch. It's been fun creating
-                these webpages and aggregating the work I've done over the past few years. You can view this
-                website's source <a target="_blank" rel="noopener noreferrer"
-                  HREF="https://github.com/7ds3f/7ds3f.github.io">HERE.</a>
-                Please don't hesitate to contact me if you find any issues. This website is still a work in progress!
-              </p1>
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div>
-      <div class="divider-container"></div>
+        </article>
+      </section>
       <div class="info-showcase">
         <div class="info-text">
           <p1>All projects are non-commercial unless labeled otherwise. Some project code has been omitted per my
@@ -528,2067 +394,346 @@
     </div>
     <!--DESIGN-->
     <div class="media-display" id="design-projects" hidden>
-      <!--FAVORITES GALLERY-->
-      <div class="portfolio-splash">
-        <img id="splash-image" src="media/3d/mp3_player_comp.png" loading="lazy" />
+      <!-- 3D RENDER GALLERY -->
+      <section class="render-intro">
+        <p1>Selected renders from my work in Blender &amp; Houdini.</p1>
+      </section>
+      <div class="render-filters" id="render-filters">
+        <button class="chip" type="button" data-filter="all">All</button>
+        <button class="chip active" type="button" data-filter="featured">Featured</button>
+        <button class="chip" type="button" data-filter="commercial">Commercial</button>
+        <button class="chip" type="button" data-filter="2024">2024</button>
+        <button class="chip" type="button" data-filter="2023">2023</button>
+        <button class="chip" type="button" data-filter="2022">2022</button>
+        <button class="chip" type="button" data-filter="2021">2021</button>
+        <button class="chip" type="button" data-filter="earlier">2020 &amp; Earlier</button>
       </div>
-      <div id="gallery-showcase-favorites" class="gallery-showcase">
-        <div class="description-text">
-          <p1>Featured renders. Click on a gallery to expand/close it.</p1>
-        </div>
-        <div class="divider-container"></div>
-        <button id="gallery-button-favorites" type="button" class="gallery-collapsible">
-          <div class="software-icons">
-            <i class="ib bx-bxl-blender"></i>
-            <i class="ib simple-icons-houdini"></i>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">Featured Renders</div>
-          </div>
-        </button>
-        <div id="gallery-favorites" class="gallery-container">
-          <div class="gallery-row">
-            <div class="iframe-wrapper">
-              <iframe width="100%" src="https://www.youtube.com/embed/Rf-Ntse3ISg?si=tudd-qsdOfCe7-vj?&playlist=Rf-Ntse3ISg&loop=1&autoplay=1&mute=1&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2023/eve-1.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Eve"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2023</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Foliage Models - Botaniq Blender Addon<br>Background Image - Ashley Adamant</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/amplifier.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Amplifier"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="gallery-img-wrapper">
-              <img src="media/3d/2023/topdown.jpg" loading="lazy" />
-              <div class="learn-more-icon">
-                <p1>[i]</p1>
-              </div>
-              <div class="image-details-mini">
-                <h1>Topdown</h1>
-                <div class="media-divider"></div>
-                <p1>for Triumph Modular | 2023</p1>
-                <div class="divider-container"></div>
-                <a HREF="#triumph-modular">Commercial Work - More Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/window-1.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Window"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                  <a HREF="#window">More Details</a>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2024/prototype-1.webp" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Prototype" (WIP)</h1>
-                  <div class="media-divider"></div>
-                  <p1>2024</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Humanoid - MakeHuman<br>
-                      Some textures are from Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="gallery-img-wrapper">
-              <img src="media/3d/2022/triumph-interior.webp" loading="lazy" />
-              <div class="learn-more-icon">
-                <p1>[i]</p1>
-              </div>
-              <div class="image-details-mini">
-                <h1>Trailer Interior</h1>
-                <div class="media-divider"></div>
-                <p1>for Triumph Modular | 2022</p1>
-                <div class="divider-container"></div>
-                <a HREF="#triumph-modular">Commercial Work - More Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/light-1.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Light"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Some models are from BlenderKit<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2023/portals.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Portals"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2023</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Foliage Models - Botaniq Blender Addon<br>
-                      Bike Model - Traffiq Blender Addon<br>
-                      Some textures are from Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/rpi-bridge.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"RPI Bridge"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Foliage Models - Botaniq Blender Addon<br>
-                      Human Model - NumikPopulate<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2022/guitar.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Guitar"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2022</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Plant Models - Botaniq Blender Addon<br>
-                      Some textures are from Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="gallery-img-wrapper">
-              <img src="media/3d/2023/generator.png" loading="lazy" />
-              <div class="learn-more-icon">
-                <p1>[i]</p1>
-              </div>
-              <div class="image-details-mini">
-                <h1>Generator</h1>
-                <div class="media-divider"></div>
-                <p1>for Triumph Modular | 2023</p1>
-                <div class="divider-container"></div>
-                <a HREF="#triumph-modular">Commercial Work - More Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
+      <div class="render-grid" id="render-grid"></div>
+      <div class="render-more">
+        <button class="render-toggle" id="render-toggle" type="button" hidden></button>
       </div>
-      <!--Favorite Project-->
-      <!-- <div class="design-showcase">
-        <div class="divider-container"></div>
-        <div class="description-text">
-          <p1>Featured Project.</p1>
-        </div>
-        <div class="divider-container"></div>
-        <button id="prototype" type="button" class="collapsible">
-          <div class="software-icons">
-            <i class="ib bx-bxl-blender"></i>
-            <i class="ib simple-icons-houdini"></i>
-          </div>
-          <div class="project-info-container">
-            <div class="project-info">2025</div>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">Prototype</div>
-          </div>
-        </button>
-        <div id="darth-croft-cont" class="project-container" hidden>
-          <div class="row">
-            <div class="ack-showcase">
-              <div class="row">
-                <div class="description-text">
-                  <h1>Project Acknowledgements</h1>
-                  <p1>Humanoid - MakeHuman
-                    </p1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="description-text">
-              <p1>Darth Croft was a week-long project I completed for the 3D Art with Blender course at RPI (GSAS
-                2961).
-                The project objective was to animate a hybrid model. I chose to combine a 3D model of Darth
-                Vader with one of Lara Croft from the Tomb Raider series (hence the title, "Darth Croft"). Please note
-                that I did NOT model Lara Croft, Darth Vader, nor the lightsaber because modeling was not the focus of
-                this
-                project. Working with these pre-made models allowed me to spend more time experimenting
-                with animation and cinematic design in Blender. Gaining more familiarity with Blender's graph, action,
-                and NLA editors allowed me to create more complex animations than I had ever before. And when choosing
-                camera angles and material colors, I was careful to borrow design elements from Star Wars while also
-                creating an
-                original presentation for this new character.</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Prototype + Sci-fi Environment</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/2024/prototype-1-wide.webp" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="description-text">
-              <p1>Overall, I'm happy with how this project turned out, especially considering the time constraint. I
-                had a ton of fun editing the final animation, syncing sound effects and telling a story.
-                There are a number of things I would change/improve in a second iteration of this project, but the value
-                of it stems more from the skills I honed rather than the final result. I learned how to blend
-                animations in the NLA editor, store rig poses in the pose library, use more constraint modifiers, and
-                achieve
-                better looking renders in the Eevee render engine, just to list a few.</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Blender 3D Workspace</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/project-details/darth-croft/darth-croft-workspace-2.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Blender VSE Workspace</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/project-details/darth-croft/darth-croft-workspace-3.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/project-details/darth-croft/darth-croft-2.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div> -->
-      <!--2024 GALLERY-->
-      <div id="gallery-showcase-2024" class="gallery-showcase">
-        <div class="divider-container"></div>
-        <div class="description-text">
-          <p1>All renders. By Year.</p1>
-        </div>
-        <div class="divider-container"></div>
-        <button id="gallery-button-2024" type="button" class="gallery-collapsible">
-          <div class="software-icons">
-            <i class="ib bx-bxl-blender"></i>
-            <i class="ib simple-icons-houdini"></i>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">2024 - Now</div>
-          </div>
-        </button>
-        <div id="gallery-2024" class="gallery-container" hidden>
-          <div class="gallery-row">
-            <div class="gallery-img-wrapper">
-              <img src="media/3d/2024/prototype-1.webp" loading="lazy" />
-              <div class="learn-more-icon">
-                <p1>[i]</p1>
-              </div>
-              <div class="image-details-mini">
-                <h1>"Prototype" (WIP)</h1>
-                <div class="media-divider"></div>
-                <p1>2024</p1>
-                <div class="divider-container"></div>
-                <div class="ack-showcase-mini">
-                  <h1>Project Acknowledgements</h1>
-                  <p1>Humanoid - MakeHuman<br>
-                    Some textures are from Poliigon.com</p1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="iframe-wrapper">
-              <iframe width="100%" src="https://www.youtube.com/embed/3piQztIwVG4?si=QhLJMW_5X-kpXL6G?&playlist=3piQztIwVG4&loop=1&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="iframe-wrapper">
-                <iframe width="100%" src="https://www.youtube.com/embed/hgsc9Ey5olY?si=MTK94W0FvDTzP2eI?&playlist=hgsc9Ey5olY&loop=1&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div class="column">
-              <div class="iframe-wrapper">
-                <iframe width="100%" src="https://www.youtube.com/embed/QxTjw3raX_k?si=P5z_8vSe0UUZqTLg?&playlist=QxTjw3raX_k&loop=1&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="gallery-img-wrapper">
-              <img src="media/3d/2024/abell39-1.webp" loading="lazy" />
-              <div class="learn-more-icon">
-                <p1>[i]</p1>
-              </div>
-              <div class="image-details-mini">
-                <h1>"Abell 39"</h1>
-                <div class="media-divider"></div>
-                <p1>2024</p1>
-                <div class="divider-container"></div>
-                <div class="ack-showcase-mini">
-                  <h1>Project Acknowledgements</h1>
-                  <p1>Man - RenderPeople<br>
-                    Astronaut - Sketchfab<br>
-                    Some models are from BlenderKit</p1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div>
-      <!--2023 GALLERY-->
-      <div id="gallery-showcase-2023" class="gallery-showcase">
-        <div class="divider-container"></div>
-        <button id="gallery-button-2023" type="button" class="gallery-collapsible">
-          <div class="software-icons">
-            <i class="ib bx-bxl-blender"></i>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">2023</div>
-          </div>
-        </button>
-        <div id="gallery-2023" class="gallery-container" hidden>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2023/soda-bottle.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Soda Bottle"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2023</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2023/robot.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Crappy Robot"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2023</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2023/primitives.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Primitives"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2023</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2023/mountaintop.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Mountaintop"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2023</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Foliage & Rock Models - Botaniq Blender Addon<br>
-                      Human Model - Humano3D<br>
-                      Some textures are from Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2023/portals.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Portals"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2023</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Foliage Models - Botaniq Blender Addon<br>
-                      Bike Model - Traffiq Blender Addon<br>
-                      Some textures are from Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2023/eve-1.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Eve"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2023</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Foliage Models - Botaniq Blender Addon<br>Background Image - Ashley Adamant</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <!-- <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2023/kara.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Kara"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2023</p1>
-                  <div class="divider-container"></div>
-                  <a HREF="#kara">More Details</a>
-                </div>
-              </div>
-            </div> -->
-            <!-- <div class="column"> -->
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2023/guitar-water-2.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Guitar Ad"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2023</p1>
-                  <div class="divider-container"></div>
-                  <a HREF="#guitar-ad">More Details</a>
-                </div>
-              </div>
-            <!-- </div> -->
-          </div>
-          <!-- <div class="gallery-row">
-            <div class="gallery-img-wrapper">
-              <img src="media/3d/2023/darth-croft-3.jpg" loading="lazy" />
-              <div class="learn-more-icon">
-                <p1>[i]</p1>
-              </div>
-              <div class="image-details-mini">
-                <h1>"Darth Croft"</h1>
-                <div class="media-divider"></div>
-                <p1>2023</p1>
-                <div class="divider-container"></div>
-                <a HREF="#darth-croft">More Details</a>
-              </div>
-            </div>
-          </div> -->
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2023/generator.png" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>Generator</h1>
-                  <div class="media-divider"></div>
-                  <p1>for Triumph Modular | 2023</p1>
-                  <div class="divider-container"></div>
-                  <a HREF="#triumph-modular">Commercial Work - More Details</a>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2023/topdown.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>Topdown</h1>
-                  <div class="media-divider"></div>
-                  <p1>for Triumph Modular | 2023</p1>
-                  <div class="divider-container"></div>
-                  <a HREF="#triumph-modular">Commercial Work - More Details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="gallery-img-wrapper">
-              <img src="media/3d/2023/air-purifier.png" loading="lazy" />
-              <div class="learn-more-icon">
-                <p1>[i]</p1>
-              </div>
-              <div class="image-details-mini">
-                <h1>Air Purifier</h1>
-                <div class="media-divider"></div>
-                <p1>for Triumph Modular | 2023</p1>
-                <div class="divider-container"></div>
-                <a HREF="#triumph-modular">Commercial Work - More Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div>
-      <!--2022 GALLERY-->
-      <div id="gallery-showcase-2022" class="gallery-showcase">
-        <div class="divider-container"></div>
-        <button id="gallery-button-2022" type="button" class="gallery-collapsible">
-          <div class="software-icons">
-            <i class="ib bx-bxl-blender"></i>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">2022</div>
-          </div>
-        </button>
-        <div id="gallery-2022" class="gallery-container" hidden>
-          <div class="gallery-row">
-            <div class="gallery-img-wrapper">
-              <img src="media/3d/2022/supercharger.jpg" loading="lazy" />
-              <div class="learn-more-icon">
-                <p1>[i]</p1>
-              </div>
-              <div class="image-details-mini">
-                <h1>"Supercharger"</h1>
-                <div class="media-divider"></div>
-                <p1>2022</p1>
-                <div class="divider-container"></div>
-                <div class="ack-showcase-mini">
-                  <h1>Project Acknowledgements</h1>
-                  <p1>Human Model - RenderPeople</p1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="gallery-img-wrapper">
-              <img src="media/3d/2022/rail-car-1.jpg" loading="lazy" />
-              <div class="learn-more-icon">
-                <p1>[i]</p1>
-              </div>
-              <div class="image-details-mini">
-                <h1>"Railcar"</h1>
-                <div class="media-divider"></div>
-                <p1>2022</p1>
-                <div class="divider-container"></div>
-                <div class="ack-showcase-mini">
-                  <h1>Project Acknowledgements</h1>
-                  <p1>Foliage & Tree Models - Botaniq Blender Addon<br>
-                    Canoe Model - Traffiq Blender Addon<br>
-                    Human Models - Humano3D<br>
-                    Some textures are from Textures.com and Poliigon.com
-                  </p1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="gallery-img-wrapper">
-              <img src="media/3d/2022/guitar.jpg" loading="lazy" />
-              <div class="learn-more-icon">
-                <p1>[i]</p1>
-              </div>
-              <div class="image-details-mini">
-                <h1>"Guitar"</h1>
-                <div class="media-divider"></div>
-                <p1>2022</p1>
-                <div class="divider-container"></div>
-                <div class="ack-showcase-mini">
-                  <h1>Project Acknowledgements</h1>
-                  <p1>Plant Models - Botaniq Blender Addon<br>
-                    Some textures are from Poliigon.com</p1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2022/lost-rain.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Find Home"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2022</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Human Model - Humano3D<br>
-                      Rain Generator - Baga Rain Generator Blender Addon<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/2022/coffee-maker.png" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>Coffee Maker</h1>
-                  <div class="media-divider"></div>
-                  <p1>for Triumph Modular | 2022</p1>
-                  <div class="divider-container"></div>
-                  <a HREF="#triumph-modular">Commercial Work - More Details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="gallery-img-wrapper">
-              <img src="media/3d/2022/exterior.jpg" loading="lazy" />
-              <div class="learn-more-icon">
-                <p1>[i]</p1>
-              </div>
-              <div class="image-details-mini">
-                <h1>Exterior</h1>
-                <div class="media-divider"></div>
-                <p1>for Triumph Modular | 2022</p1>
-                <div class="divider-container"></div>
-                <a HREF="#triumph-modular">Commercial Work - More Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div>
-      <!--OLDER GALLERY-->
-      <div id="gallery-showcase-old" class="gallery-showcase">
-        <div class="divider-container"></div>
-        <button id="gallery-button-old" type="button" class="gallery-collapsible">
-          <div class="software-icons">
-            <i class="ib bx-bxl-blender"></i>
-            <i class="ibc vscode-icons-file-type-maya"></i>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">2016 - 2021</div>
-          </div>
-        </button>
-        <div id="gallery-old" class="gallery-container" hidden>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/window-1.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Window"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                  <a HREF="#darth-croft">More Details</a>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/water.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Spill"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2020</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/vision.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Vision"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2019</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/two-chairs.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Two Chairs"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2017</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/tree.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Tree"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2019</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/sound.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Sound"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2020</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/station.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Station"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2022</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Human Model - RenderPeople<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/sand.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Sand"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/soda-can.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Soda Can"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/nature.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Nature"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2020</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/shards.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Shards"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2019</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/rpi-bridge.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"RPI Bridge"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Foliage Models - Botaniq Blender Addon<br>
-                      Human Model - NumikPopulate<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/amplifier.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Amplifier"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/rush-hour-1.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Rush Hour"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2020</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/rainy-1.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Rainy"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2020</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Human Model - Humano3D<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/phone-booth.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Phone Booth"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Plant Models - Botaniq Blender Addon<br>
-                      Reference Image - Ed Deasy<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/plant.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Plant Protection"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2020</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Plant Models - Botaniq Blender Addon<br>
-                      Human Model - Humano3D<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/new.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"New"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2020</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Human Models - RenderPeople<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/modern-arch.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Modern Architecture"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2017</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Some textures are from Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/modern-apartment.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Modern Apartment"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2017</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Some textures are from Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/mannequin.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Mannequin"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2017</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Some textures are from Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/lighthouse-3.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Lookout"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2020</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Some textures are from Textures.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/love.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Love"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Human Model - Generated with MakeHuman<br>
-                      Some textures are from Textures.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/lost-1.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Lost"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2020</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Human Model - Humano3D<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/lighthouse-1.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Lighthouse"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Grass Models - Botaniq Blender Addon<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/lantern.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Lantern"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2019</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/lighter.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Lighter"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2018</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/fade.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Fade"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2018</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/light-1.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Light"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Some models are from BlenderKit<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/hand.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Zoom 2.0"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2020</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Hand Model - Sourced from Sketchfab<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/house-1.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"House"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2019</p1>
-                  <div class="divider-container"></div>
-                  <a HREF="#house">More Details</a>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/city-views.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"City Views"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2019</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Plant Models - Sourced from CGTrader<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/garden.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Garden"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Foliage & Tree Models - Botaniq Blender Addon<br>
-                      Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/aliens-1.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Aliens"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2020</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/dash.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Dash"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2019</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/classic.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Classic"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2021</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/chairs.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Livingroom"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2018</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Some textures are from Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/buoy.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Buoy"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2018</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/bulb.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Bulb"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2017</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/breathe.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Breathe"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2019</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/beach-house.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Beach House"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2020</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Some textures are from Textures.com and Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/bars.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Bars"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2019</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/barn.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Barn"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2017</p1>
-                  <div class="divider-container"></div>
-                  <div class="ack-showcase-mini">
-                    <h1>Project Acknowledgements</h1>
-                    <p1>Some textures are from Poliigon.com</p1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="gallery-img-wrapper">
-                <img src="media/3d/old/army-radio.jpg" loading="lazy" />
-                <div class="learn-more-icon">
-                  <p1>[i]</p1>
-                </div>
-                <div class="image-details-mini">
-                  <h1>"Army Radio"</h1>
-                  <div class="media-divider"></div>
-                  <p1>2018</p1>
-                  <div class="divider-container"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-row">
-            <div class="gallery-img-wrapper">
-              <img src="media/3d/old/air-balloon.jpg" loading="lazy" />
-              <div class="learn-more-icon">
-                <p1>[i]</p1>
-              </div>
-              <div class="image-details-mini">
-                <h1>"Air Balloon"</h1>
-                <div class="media-divider"></div>
-                <p1>2021</p1>
-                <div class="divider-container"></div>
-                <div class="ack-showcase-mini">
-                  <h1>Project Acknowledgements</h1>
-                  <p1>Human Model - Generated with MakeHuman<br>
-                    Some textures are from Textures.com</p1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div>
+      <p class="render-empty" id="render-empty" hidden>Nothing here yet.</p>
+
       <!--PROJECT DETAILS-->
-      <div class="design-showcase">
-        <div class="divider-container"></div>
-        <div class="description-text">
-          <p1>Selected Projects.</p1>
+      <section class="projects-section">
+        <div class="projects-heading">
+          <p1>Selected project details.</p1>
         </div>
-        <div class="divider-container"></div>
-        <button id="triumph-modular" type="button" class="collapsible">
-          <div class="software-icons">
-            <i class="ib bx-bxl-blender"></i>
-          </div>
-          <div class="project-info-container-commercial">
-            <div class="project-info-commercial">Commercial Projects | 2021-24</div>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">Triumph Modular</div>
-          </div>
-        </button>
-        <div class="project-container" hidden>
-          <div class="row">
-            <div class="column">
-              <div class="description-text">
-                <p1>From June 2021 to September 2024, I completed many professional 3D modeling and rendering projects
-                  for
-                  Triumph Modular.
-                  Projects usually included modeling products and creating detailed exterior and interior renders. View
-                  Triumph's website <a target="_blank" rel="noopener noreferrer"
-                    HREF="https://www.triumphmodular.com/">HERE.</a> I created renders
-                  for Triumph's mobile trailer, container, and office furniture divisions. The renders
-                  below are a small fraction of the work I completed.
-                </p1>
-              </div>
-            </div>
-            <div class="column">
-              <div class="subtitle-text-center">
-                <p1>Triumph Renders at the 2024 GLDC Expo</p1>
-              </div>
-              <div class="img-wrapper">
-                <img src="media/3d/project-details/triumph-modular/triumph-modular-gldc.jpg" loading="lazy" />
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Objects for Interior Renders</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column">
-              <div class="img-wrapper">
-                <img src="media/3d/2023/air-purifier.png" loading="lazy" />
-              </div>
-            </div>
-            <div class="column">
-              <div class="img-wrapper">
-                <img src="media/3d/2022/coffee-maker.png" loading="lazy" />
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Power Generator</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/2023/generator.png" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Trailer Topdown</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/2023/topdown.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Trailer Exterior Render</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/2022/exterior.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Trailer Interior Render</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/2022/triumph-interior.webp" loading="lazy" />
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div>
-      <div class="design-showcase">
-        <div class="divider-container"></div>
-        <button id="guitar-ad" type="button" class="collapsible">
-          <div class="software-icons">
-            <i class="ib bx-bxl-blender"></i>
-          </div>
-          <div class="project-info-container">
-            <div class="project-info">2023</div>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">Guitar Ad</div>
-          </div>
-        </button>
-        <div class="project-container" hidden>
-          <div class="row">
-            <div class="ack-showcase">
-              <div class="row">
-                <div class="description-text">
-                  <h1>Project Acknowledgements</h1>
-                  <p1>
-                    Final animation song - "Balance" by Sara Tavares<br>
-                    Some textures are from Textures.com and Poliigon.com
-                  </p1>
+
+        <article class="project">
+          <button id="triumph-modular" type="button" class="project-head" aria-expanded="false">
+            <span class="project-head-info">
+              <span class="project-head-tag commercial"><span class="tag-commercial">Commercial</span> · 2021–24</span>
+              <span class="project-head-title">Triumph Modular</span>
+            </span>
+            <span class="project-head-icon" aria-hidden="true"></span>
+          </button>
+          <div class="project-body" hidden>
+            <div class="project-layout">
+              <aside class="project-info">
+                <span class="project-info-tag"><span class="tag-commercial">Commercial</span> · 2021–24</span>
+                <h2 class="project-info-title">Triumph Modular</h2>
+                <div class="project-software">
+                  <span class="software-chip"><i class="ib bx-bxl-blender" aria-hidden="true"></i>Blender</span>
                 </div>
+                <p1 class="project-info-desc">From June 2021 to September 2024, I completed many professional 3D
+                  modeling and rendering projects for Triumph Modular — modeling products and creating detailed
+                  exterior and interior renders across their mobile trailer, container, and office-furniture divisions.
+                  View Triumph's website <a target="_blank" rel="noopener noreferrer"
+                    HREF="https://www.triumphmodular.com/">HERE.</a> The renders here are a small fraction of the work I
+                  completed.</p1>
+              </aside>
+              <div class="project-stream">
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="2024 GLDC Expo" data-year="2024"
+                      src="media/3d/project-details/triumph-modular/triumph-modular-gldc.jpg" loading="lazy"
+                      alt="Triumph renders at the 2024 GLDC Expo" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">2024 GLDC Expo</span>
+                    <span class="stream-note">Triumph renders on display at the expo.</span>
+                  </figcaption>
+                </figure>
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="Air Purifier" data-year="2023" src="media/3d/2023/air-purifier.png" loading="lazy"
+                      alt="Air purifier product render" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Air Purifier</span>
+                    <span class="stream-note">Product model for interior renders.</span>
+                  </figcaption>
+                </figure>
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="Coffee Maker" data-year="2022" src="media/3d/2022/coffee-maker.png" loading="lazy"
+                      alt="Coffee maker product render" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Coffee Maker</span>
+                    <span class="stream-note">Product model for interior renders.</span>
+                  </figcaption>
+                </figure>
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="Power Generator" data-year="2023" src="media/3d/2023/generator.png" loading="lazy"
+                      alt="Power generator render" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Power Generator</span>
+                    <span class="stream-note">Product render for Triumph Modular.</span>
+                  </figcaption>
+                </figure>
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="Trailer Topdown" data-year="2023" src="media/3d/2023/topdown.jpg" loading="lazy"
+                      alt="Top-down render of a trailer" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Trailer Topdown</span>
+                    <span class="stream-note">Top-down render of a mobile trailer.</span>
+                  </figcaption>
+                </figure>
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="Trailer Exterior" data-year="2022" src="media/3d/2022/exterior.jpg" loading="lazy"
+                      alt="Exterior render of a trailer" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Trailer Exterior</span>
+                    <span class="stream-note">Exterior render of a mobile trailer.</span>
+                  </figcaption>
+                </figure>
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="Trailer Interior" data-year="2022" src="media/3d/2022/triumph-interior.webp"
+                      loading="lazy" alt="Interior render of a trailer" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Trailer Interior</span>
+                    <span class="stream-note">Interior render of a mobile trailer.</span>
+                  </figcaption>
+                </figure>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="description-text">
-              <p1>Guitar Ad was a week-long project I completed for the 3D Art with Blender course at RPI (GSAS 2961).
-                The project objective was to make different objects interact. I decided to make this experimental
-                advertisement
-                for Yamaha's C40 acoustic guitar. While this is an awful advertisement for a guitar, it was a great
-                opportunity
-                for me to learn more about Blender's FLIP fluid simulator. I also found that combining an orthographic
-                camera
-                with a glass material and HDRI background yeilded some very cool visuals.</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Final Animation</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <video preload="none" poster="media/3d/project-details/guitar-ad/video-poster.jpg" control loop
-                src="https://res.cloudinary.com/dn0mwj8ow/video/upload/v1691981172/3D%20art%20for%20Blender/guitar-ad2_ieudiz.mp4"
-                controls class="video" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Still Renders</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/project-details/guitar-ad/guitar-ad-3.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/project-details/guitar-ad/guitar-ad-4.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Blender Workspace</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/project-details/guitar-ad/guitar-ad-workspace-1.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="divider-container"></div> -->
-      <!-- <div class="design-showcase">
-        <button id="darth-croft" type="button" class="collapsible">
-          <div class="software-icons">
-            <i class="ib bx-bxl-blender"></i>
-          </div>
-          <div class="project-info-container">
-            <div class="project-info">2023</div>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">Darth Croft</div>
-          </div>
-        </button>
-        <div id="darth-croft-cont" class="project-container" hidden>
-          <div class="row">
-            <div class="ack-showcase">
-              <div class="row">
-                <div class="description-text">
-                  <h1>Project Acknowledgements</h1>
-                  <p1>Lightsaber Model - art_em<br>
-                    Darth Vader Model - Konstantin Koretskyi<br>
-                    Lara Croft Model - Tomb Raider<br>
-                    Base Walk Cycle Animation - Mixamo<br>
-                    Final Animation Song - "Test Pilot" by Stilz + The Encounter</p1>
+        </article>
+
+        <article class="project">
+          <button id="guitar-ad" type="button" class="project-head" aria-expanded="false">
+            <span class="project-head-info">
+              <span class="project-head-tag">Personal · 2023</span>
+              <span class="project-head-title">Guitar Ad</span>
+            </span>
+            <span class="project-head-icon" aria-hidden="true"></span>
+          </button>
+          <div class="project-body" hidden>
+            <div class="project-layout">
+              <aside class="project-info">
+                <span class="project-info-tag">Personal · 2023</span>
+                <h2 class="project-info-title">Guitar Ad</h2>
+                <div class="project-software">
+                  <span class="software-chip"><i class="ib bx-bxl-blender" aria-hidden="true"></i>Blender</span>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column">
-              <div class="img-wrapper">
-                <img src="media/3d/project-details/darth-croft/darth-croft-1.jpg" loading="lazy" />
-              </div>
-            </div>
-            <div class="column">
-              <div class="description-text">
-                <p1>Darth Croft was a week-long project I completed for the 3D Art with Blender course at RPI (GSAS
-                  2961).
-                  The project objective was to animate a hybrid model. I chose to combine a 3D model of Darth
-                  Vader with one of Lara Croft from the Tomb Raider series (hence the title, "Darth Croft"). Please note
-                  that I did NOT model Lara Croft, Darth Vader, nor the lightsaber because modeling was not the focus of
-                  this
-                  project. Working with these pre-made models allowed me to spend more time experimenting
-                  with animation and cinematic design in Blender. Gaining more familiarity with Blender's graph, action,
-                  and NLA editors allowed me to create more complex animations than I had ever before. And when choosing
-                  camera angles and material colors, I was careful to borrow design elements from Star Wars while also
-                  creating an
-                  original presentation for this new character.</p1>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Final Animation</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <video preload="none" poster="media/3d/project-details/darth-croft/video-poster.jpg" control loop
-                src="https://res.cloudinary.com/dn0mwj8ow/video/upload/v1690445484/3D%20art%20for%20Blender/darth-croft_uadwox.mp4"
-                controls class="video" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="description-text">
-              <p1>Overall, I'm happy with how this project turned out, especially considering the time constraint. I
-                had a ton of fun editing the final animation, syncing sound effects and telling a story.
-                There are a number of things I would change/improve in a second iteration of this project, but the value
-                of it stems more from the skills I honed rather than the final result. I learned how to blend
-                animations in the NLA editor, store rig poses in the pose library, use more constraint modifiers, and
-                achieve
-                better looking renders in the Eevee render engine, just to list a few.</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Blender 3D Workspace</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/project-details/darth-croft/darth-croft-workspace-2.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Blender VSE Workspace</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/project-details/darth-croft/darth-croft-workspace-3.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/project-details/darth-croft/darth-croft-2.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div> -->
-      <!-- <div class="divider-container"></div> -->
-      <!-- <div class="design-showcase">
-        <button id="kara" type="button" class="collapsible">
-          <div class="software-icons">
-            <i class="ib bx-bxl-blender"></i>
-          </div>
-          <div class="project-info-container">
-            <div class="project-info">2023</div>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">Kara</div>
-          </div>
-        </button>
-        <div class="project-container" hidden>
-          <div class="row">
-            <div class="ack-showcase">
-              <div class="row">
-                <div class="description-text">
-                  <h1>Project Acknowledgements</h1>
-                  <p1>Kara Model - DaxProduction<br>
-                    Animations - Mixamo<br>
-                    Some models are from Blenderkit<br>
-                    Some textures are from Textures.com and Poliigon.com<br>
-                    Final Animation Song - Detroit: Become Human OST</p1>
+                <p1 class="project-info-desc">A week-long project for the 3D Art with Blender course at RPI (GSAS 2961).
+                  The objective was to make different objects interact, so I built this experimental advertisement for
+                  Yamaha's C40 acoustic guitar. It was a great excuse to learn Blender's FLIP fluid simulator, and I
+                  found that an orthographic camera through a glass material with an HDRI background yielded some really
+                  cool visuals.</p1>
+                <div class="project-credits">
+                  <span class="project-credits-label">Acknowledgements</span>
+                  <p2>Final animation song — "Balance" by Sara Tavares<br>
+                    Some textures from Textures.com and Poliigon.com</p2>
                 </div>
+              </aside>
+              <div class="project-stream">
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <video preload="none" poster="media/3d/project-details/guitar-ad/video-poster.jpg" loop controls
+                      class="video"
+                      src="https://res.cloudinary.com/dn0mwj8ow/video/upload/v1691981172/3D%20art%20for%20Blender/guitar-ad2_ieudiz.mp4"></video>
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Final Animation</span>
+                    <span class="stream-note">Built around Blender's FLIP fluid simulator.</span>
+                  </figcaption>
+                </figure>
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="Still Render" data-year="2023"
+                      src="media/3d/project-details/guitar-ad/guitar-ad-3.jpg" loading="lazy"
+                      alt="Guitar ad still render" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Still Render</span>
+                    <span class="stream-note">Orthographic camera through a glass material.</span>
+                  </figcaption>
+                </figure>
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="Still Render" data-year="2023"
+                      src="media/3d/project-details/guitar-ad/guitar-ad-4.jpg" loading="lazy"
+                      alt="Guitar ad still render" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Still Render</span>
+                    <span class="stream-note">HDRI-lit product shot.</span>
+                  </figcaption>
+                </figure>
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="Blender Workspace" data-year="2023"
+                      src="media/3d/project-details/guitar-ad/guitar-ad-workspace-1.jpg" loading="lazy"
+                      alt="Blender workspace" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Blender Workspace</span>
+                    <span class="stream-note">Fluid sim and scene setup.</span>
+                  </figcaption>
+                </figure>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="description-text">
-              <p1>Kara was a week-long project I completed for the 3D Art with Blender course at RPI (GSAS 2961).
-                The goal of the project was to rig and animate a character with Mixamo. I chose to design a scene
-                similar to those seen in the video game Detroit: Become Human. In this game, players will often
-                need to make a choice that their character will carry out, sometimes changing the direction of the
-                whole story. I tried to replicate this in the final animation below. This project was the first time I
-                made a valiant effort to animate a character. The animations
-                are pretty rough, but I had alot of fun designing the scene, setting up the camera shots, and solving
-                new problems.</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Final Animation</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <video preload="none" poster="media/3d/project-details/kara/video-poster.jpg" control loop
-                src="https://res.cloudinary.com/dn0mwj8ow/video/upload/v1690169194/3D%20art%20for%20Blender/video_aksvpb.mp4"
-                controls class="video">
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Blender Workspace</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/project-details/kara/kara-workspace-1.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div> -->
-      <div class="divider-container"></div>
-      <div class="design-showcase">
-        <button id="window" type="button" class="collapsible">
-          <div class="software-icons">
-            <i class="ib bx-bxl-blender"></i>
-          </div>
-          <div class="project-info-container">
-            <div class="project-info">2021</div>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">Window</div>
-          </div>
-        </button>
-        <div class="project-container" hidden>
-          <div class="row">
-            <div class="ack-showcase">
-              <div class="row">
-                <div class="description-text">
-                  <h1>Project Acknowledgements</h1>
-                  <p1>Human Model - Generated with MakeHuman<br>
-                    Plant Models - Botaniq Blender Addon<br>
-                    Some textures are from Textures.com and Poliigon.com
-                  </p1>
+        </article>
+
+        <article class="project">
+          <button id="window" type="button" class="project-head" aria-expanded="false">
+            <span class="project-head-info">
+              <span class="project-head-tag">Personal · 2021</span>
+              <span class="project-head-title">Window</span>
+            </span>
+            <span class="project-head-icon" aria-hidden="true"></span>
+          </button>
+          <div class="project-body" hidden>
+            <div class="project-layout">
+              <aside class="project-info">
+                <span class="project-info-tag">Personal · 2021</span>
+                <h2 class="project-info-title">Window</h2>
+                <div class="project-software">
+                  <span class="software-chip"><i class="ib bx-bxl-blender" aria-hidden="true"></i>Blender</span>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="description-text">
-              <p1>Window is a personal project I completed to improve my modeling and scene design skills.
-                With an emphasis on photorealism, I modeled nearly every object in this scene. One lesson
-                I learned is how difficult and time-consuming filling a room with objects can be to do by hand.
-                What objects do you need to model? Where and how should these models be placed? How many objects
-                do you need to make the scene feel less "empty"? This was also the first time I posed a character
-                and created hair for a scene.</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column">
-              <div class="img-wrapper">
-                <img src="media/3d/old/window-1.jpg" loading="lazy" />
-              </div>
-            </div>
-            <div class="column">
-              <div class="img-wrapper">
-                <img src="media/3d/project-details/window/window-2.jpg" loading="lazy" />
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Clay Render</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/project-details/window/window-6.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="column">
-              <div class="img-wrapper">
-                <img src="media/3d/project-details/window/window-4.jpg" loading="lazy" />
-              </div>
-            </div>
-            <div class="column">
-              <div class="description-text">
-                <p1>Another point of difficulty with this project was composition. I learned another valuable lesson
-                  that is to frame your scene before you start modeling a ton of detailed objects. After I had finished
-                  filling the scene with these meticulously detailed objects, I wanted to make sure they could all be
-                  seen in the final render. However, I wasn't able to do this with a composition that I liked. The
-                  final composition actually doesn't show half the objects I made for the scene originally. In the end,
-                  I ended up with a result I liked, and I think I did a decent job with the photorealism. Eventually,
-                  I created another version of this scene, shown below.</p1>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Another Version</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="img-wrapper">
-              <img src="media/3d/project-details/window/window-3.jpg" loading="lazy" />
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-      </div>
-      <div class="divider-container"></div>
-      <div class="design-showcase">
-        <button id="house" type="button" class="collapsible">
-          <div class="software-icons">
-            <i class="ib bx-bxl-blender"></i>
-          </div>
-          <div class="project-info-container">
-            <div class="project-info">2019</div>
-          </div>
-          <div class="button-text-container">
-            <div class="button-text">House</div>
-          </div>
-        </button>
-        <div class="project-container" hidden>
-          <div class="row">
-            <div class="ack-showcase">
-              <div class="row">
-                <div class="description-text">
-                  <h1>Project Acknowledgements</h1>
-                  <p1>Final Animation Song - "2009" by Mac Miller<br>
-                    Some textures are from Textures.com and Poliigon.com</p1>
+                <p1 class="project-info-desc">A personal project to sharpen my modeling and scene-design skills. With an
+                  emphasis on photorealism, I modeled nearly every object in the scene — and learned how difficult and
+                  time-consuming filling a room by hand really is. It was also the first time I posed a character and
+                  created hair for a scene.</p1>
+                <div class="project-credits">
+                  <span class="project-credits-label">Acknowledgements</span>
+                  <p2>Human Model — MakeHuman<br>
+                    Plant Models — Botaniq Blender Addon<br>
+                    Some textures from Textures.com and Poliigon.com</p2>
                 </div>
+              </aside>
+              <div class="project-stream">
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="Final Render" data-year="2021" src="media/3d/old/window-1.jpg" loading="lazy"
+                      alt="Window final render" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Final Render</span>
+                    <span class="stream-note">The finished, photoreal scene.</span>
+                  </figcaption>
+                </figure>
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="Second Angle" data-year="2021"
+                      src="media/3d/project-details/window/window-2.jpg" loading="lazy" alt="Window second angle" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Second Angle</span>
+                    <span class="stream-note">A different view of the same room.</span>
+                  </figcaption>
+                </figure>
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="Clay Render" data-year="2021"
+                      src="media/3d/project-details/window/window-6.jpg" loading="lazy" alt="Window clay render" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Clay Render</span>
+                    <span class="stream-note">Untextured pass showing the modeling.</span>
+                  </figcaption>
+                </figure>
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="Composition Study" data-year="2021"
+                      src="media/3d/project-details/window/window-4.jpg" loading="lazy" alt="Window composition study" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Composition Study</span>
+                    <span class="stream-note">I learned to frame the scene before modeling a ton of detail — the final
+                      composition actually doesn't show half the objects I originally made.</span>
+                  </figcaption>
+                </figure>
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <img data-title="Another Version" data-year="2021"
+                      src="media/3d/project-details/window/window-3.jpg" loading="lazy" alt="Window alternate version" />
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Another Version</span>
+                    <span class="stream-note">A later reworking of the same scene.</span>
+                  </figcaption>
+                </figure>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="description-text">
-              <p1>House was a semester-long independent study I completed in high school. I chose to
-                study architecture visualization. It was an extremely valuable learning experience where
-                I dealt with challenges like scene optimization, render denoising, material displacement,
-                and much more.</p1>
+        </article>
+
+        <article class="project">
+          <button id="house" type="button" class="project-head" aria-expanded="false">
+            <span class="project-head-info">
+              <span class="project-head-tag">Independent Study · 2019</span>
+              <span class="project-head-title">House</span>
+            </span>
+            <span class="project-head-icon" aria-hidden="true"></span>
+          </button>
+          <div class="project-body" hidden>
+            <div class="project-layout">
+              <aside class="project-info">
+                <span class="project-info-tag">Independent Study · 2019</span>
+                <h2 class="project-info-title">House</h2>
+                <div class="project-software">
+                  <span class="software-chip"><i class="ib bx-bxl-blender" aria-hidden="true"></i>Blender</span>
+                </div>
+                <p1 class="project-info-desc">A semester-long independent study I completed in high school, focused on
+                  architectural visualization. It was an extremely valuable learning experience where I tackled
+                  challenges like scene optimization, render denoising, and material displacement.</p1>
+                <div class="project-credits">
+                  <span class="project-credits-label">Acknowledgements</span>
+                  <p2>Final animation song — "2009" by Mac Miller<br>
+                    Some textures from Textures.com and Poliigon.com</p2>
+                </div>
+              </aside>
+              <div class="project-stream">
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <div class="iframe-wrapper">
+                      <iframe id="house-animation" src="https://player.vimeo.com/video/388845489"></iframe>
+                    </div>
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Final Animation</span>
+                    <span class="stream-note">An architectural walkthrough of the house.</span>
+                  </figcaption>
+                </figure>
+                <figure class="stream-item">
+                  <div class="feature-media">
+                    <div class="iframe-wrapper">
+                      <iframe id="house-presentation" src="https://player.vimeo.com/video/383979658"></iframe>
+                    </div>
+                  </div>
+                  <figcaption class="stream-cap">
+                    <span class="stream-label">Project Presentation</span>
+                    <span class="stream-note">A walkthrough of the process and challenges.</span>
+                  </figcaption>
+                </figure>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Final Animation</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="iframe-wrapper">
-              <iframe id="house-animation" src="https://player.vimeo.com/video/388845489"></iframe>
-            </div>
-          </div>
-          <div class="row">
-            <div class="subtitle-text-center">
-              <p1>Project Presentation</p1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="iframe-wrapper">
-              <iframe id="house-presentation" src="https://player.vimeo.com/video/383979658"></iframe>
-            </div>
-          </div>
-          <div class="divider-container">
-            <div class="media-divider"></div>
-          </div>
-        </div>
-        <div class="divider-container"></div>
-      </div>
+        </article>
+      </section>
       <div class="info-showcase">
         <div class="info-text">
           <p1>All projects are non-commercial unless labeled otherwise/watermarked. All projects were completed
@@ -2608,11 +753,32 @@
       <i class="fa fa-moon-o" aria-hidden="true"></i>
     </button>
   </div>
-  <div class="divider-container"></div>
-  <div class="page-footer">
-    <p1>1.5 | Designed by me.</p1>
+  <footer class="page-footer site-footer">
+    <div class="site-footer-top">
+      <div class="site-footer-brand">
+        <span class="site-footer-name">Will Bordman</span>
+        <span class="site-footer-role">Programmer &amp; 3D Artist</span>
+      </div>
+      <nav class="site-footer-nav">
+        <a href="./work">Work</a>
+        <a href="./contact">Contact</a>
+      </nav>
+    </div>
+    <div class="site-footer-meta">
+      <span>© 2026 Will Bordman</span>
+      <span>Designed &amp; built by me · v2.0</span>
+    </div>
+  </footer>
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+    <div class="lightbox-inner">
+      <div class="lightbox-media" id="lightbox-media"></div>
+      <div class="lightbox-meta" id="lightbox-meta"></div>
+    </div>
   </div>
-  <div class="divider-container"></div>
 </body>
 <script src="scripts/prism.js"></script>
 

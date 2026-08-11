@@ -1,32 +1,21 @@
-// Dark/Light mode toggle
-function lightToggle() {
-    const body = document.documentElement;
+function applyIconTheme(isLight) {
     var codeAnimation = document.getElementById("code-animation");
     var squareAnimation = document.getElementById("square-animation");
-
-    // Toggle light mode class
-    body.classList.toggle('light-mode');
-
-    // Save user preference
-    if (body.classList.contains('light-mode')) {
-        localStorage.setItem('theme', 'light');
-        codeAnimation.src = "media/code-lm.webp";
-        squareAnimation.src = "media/square-lm.webp";
-    } else {
-        localStorage.setItem('theme', 'dark');
-        codeAnimation.src = "media/code.webp";
-        squareAnimation.src = "media/square.webp";
-    }
+    if (codeAnimation) codeAnimation.src = isLight ? "media/code-lm.webp" : "media/code.webp";
+    if (squareAnimation) squareAnimation.src = isLight ? "media/square-lm.webp" : "media/square.webp";
 }
 
-// On page load
+function lightToggle() {
+    const root = document.documentElement;
+    root.classList.toggle('light-mode');
+    const isLight = root.classList.contains('light-mode');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    applyIconTheme(isLight);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    // Apply saved theme on page load
     if (localStorage.getItem('theme') === 'light') {
         document.documentElement.classList.add('light-mode');
-        var codeAnimation = document.getElementById("code-animation");
-        var squareAnimation = document.getElementById("square-animation");
-        codeAnimation.src = "media/code-lm.webp";
-        squareAnimation.src = "media/square-lm.webp";
+        applyIconTheme(true);
     }
 });

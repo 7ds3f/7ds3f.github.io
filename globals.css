@@ -21,6 +21,17 @@
 
     --dm-green-transparent: #00171fb6;
 
+    /* modern gallery surfaces */
+    --card-surface: rgba(255, 255, 255, 0.03);
+    --card-border: rgba(0, 255, 197, 0.20);
+    --card-shadow: rgba(0, 0, 0, 0.45);
+    --card-shadow-hover: rgba(0, 0, 0, 0.60);
+    --chip-surface: rgba(255, 255, 255, 0.04);
+    --chip-active-fg: #00171F;
+    --overlay-scrim: rgba(2, 8, 11, 0.82);
+    --media-accent: #00FFC5;
+    --hero-scrim: linear-gradient(to top, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.12) 46%, rgba(0, 0, 0, 0.32) 100%), linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.08) 58%, rgba(0, 0, 0, 0) 100%);
+
     /* images */
     --dm-bg-image1: url("media/background-gradient4.png");
     --dm-bg-image2: url("media/background-gradient3.png");
@@ -47,6 +58,17 @@
 
 
     --dm-green-transparent: transparent;
+
+    /* modern gallery surfaces */
+    --card-surface: #ffffff;
+    --card-border: rgba(0, 0, 0, 0.10);
+    --card-shadow: rgba(0, 0, 0, 0.14);
+    --card-shadow-hover: rgba(0, 0, 0, 0.24);
+    --chip-surface: rgba(0, 0, 0, 0.03);
+    --chip-active-fg: #f1f1f1;
+    --overlay-scrim: rgba(20, 20, 20, 0.88);
+    --media-accent: #ffffff;
+    --hero-scrim: linear-gradient(to top, rgba(241, 241, 241, 0.9) 0%, rgba(241, 241, 241, 0.2) 46%, rgba(241, 241, 241, 0.45) 100%), linear-gradient(to right, rgba(241, 241, 241, 0.72) 0%, rgba(241, 241, 241, 0.12) 58%, rgba(241, 241, 241, 0) 100%);
 
     /* images */
     --dm-bg-image1: url("media/background-gradient5.png");
