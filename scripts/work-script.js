@@ -220,7 +220,7 @@ const RENDERS = [
   // --- Featured ---
   { t: "Eve", y: "2023", src: "media/3d/2023/eve-1.jpg", f: true, ack: "Foliage Models — Botaniq Blender Addon · Background Image — Ashley Adamant" },
   { t: "Amplifier", y: "2021", src: "media/3d/old/amplifier.jpg", f: true },
-  { t: "Topdown", y: "2023", src: "media/3d/2023/topdown.jpg", f: true, c: true, link: "#triumph-modular" },
+  { t: "Topdown", y: "2023", src: "media/3d/2023/topdown.jpg", c: true, link: "#triumph-modular" },
   { t: "Window", y: "2021", src: "media/3d/old/window-1.jpg", f: true, link: "#window" },
   { t: "Prototype (WIP)", y: "2024", src: "media/3d/2024/prototype-1.webp", f: true, ack: "Humanoid — MakeHuman · Some textures from Poliigon.com" },
   { t: "Trailer Interior", y: "2022", src: "media/3d/2022/triumph-interior.webp", f: true, c: true, link: "#triumph-modular" },
@@ -229,13 +229,13 @@ const RENDERS = [
   { t: "RPI Bridge", y: "2021", src: "media/3d/old/rpi-bridge.jpg", f: true, ack: "Foliage Models — Botaniq · Human Model — NumikPopulate · Some textures from Textures.com and Poliigon.com" },
   { t: "Guitar", y: "2022", src: "media/3d/2022/guitar.jpg", f: true, ack: "Plant Models — Botaniq · Some textures from Poliigon.com" },
   { t: "Generator", y: "2023", src: "media/3d/2023/generator.png", f: true, c: true, link: "#triumph-modular" },
-  { t: "Featured Reel", y: "", src: "", f: true, v: "Rf-Ntse3ISg" },
+  { t: "Saber", y: "2024", src: "", f: true, v: "Rf-Ntse3ISg" },
 
   // --- 2024 ---
   { t: "Abell 39", y: "2024", src: "media/3d/2024/abell39-1.webp", ack: "Man — RenderPeople · Astronaut — Sketchfab · Some models from BlenderKit" },
-  { t: "Motion Study", y: "2024", src: "", v: "3piQztIwVG4" },
-  { t: "Motion Study", y: "2024", src: "", v: "hgsc9Ey5olY" },
-  { t: "Motion Study", y: "2024", src: "", v: "QxTjw3raX_k" },
+  { t: "VFX Project", y: "2024", src: "", v: "3piQztIwVG4" },
+  { t: "VFX Project", y: "2024", src: "", v: "hgsc9Ey5olY" },
+  { t: "VFX Project", y: "2024", src: "", v: "QxTjw3raX_k" },
 
   // --- 2023 ---
   { t: "Soda Bottle", y: "2023", src: "media/3d/2023/soda-bottle.jpg" },
@@ -250,7 +250,7 @@ const RENDERS = [
   { t: "Railcar", y: "2022", src: "media/3d/2022/rail-car-1.jpg", ack: "Foliage & Tree Models — Botaniq · Canoe Model — Traffiq · Human Models — Humano3D · Some textures from Textures.com and Poliigon.com" },
   { t: "Find Home", y: "2022", src: "media/3d/2022/lost-rain.jpg", ack: "Human Model — Humano3D · Rain Generator — Baga Rain Generator · Some textures from Textures.com and Poliigon.com" },
   { t: "Coffee Maker", y: "2022", src: "media/3d/2022/coffee-maker.png", c: true, link: "#triumph-modular" },
-  { t: "Exterior", y: "2022", src: "media/3d/2022/exterior.jpg", c: true, link: "#triumph-modular" },
+  { t: "Exterior", y: "2022", src: "media/3d/2022/exterior.jpg", f: true, c: true, link: "#triumph-modular" },
   { t: "Station", y: "2022", src: "media/3d/old/station.jpg", ack: "Human Model — RenderPeople · Some textures from Textures.com and Poliigon.com" },
 
   // --- 2021 ---
