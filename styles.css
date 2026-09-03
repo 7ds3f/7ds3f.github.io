@@ -2143,14 +2143,32 @@ body.lb-open {
 }
 
 @media screen and (max-width: 640px) {
+  .media-display {
+    width: 100%;
+  }
+  .projects-section {
+    padding: 0 12px;
+  }
   .project-head {
     min-height: 130px;
   }
   .project-head-title {
-    font-size: 28px;
+    font-size: 26px;
   }
   .project-body {
     padding: 14px;
+  }
+  .project-info-title {
+    font-size: 24px;
+  }
+  .project-info-desc {
+    font-size: 15px;
+  }
+  .stream-label {
+    font-size: 16px;
+  }
+  .stream-note {
+    font-size: 14px;
   }
 }
 
@@ -2569,7 +2587,16 @@ body.lb-open {
     grid-template-columns: 1fr;
   }
   .repo-title {
-    font-size: 21px;
+    font-size: 19px;
+  }
+  .repo-desc {
+    font-size: 14px;
+  }
+  .repo-readme p1 {
+    font-size: 15px;
+  }
+  .project.repo .project-body {
+    padding: 16px;
   }
   .project-head.repo-head {
     flex-direction: column;
