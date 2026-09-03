@@ -2296,6 +2296,7 @@ body.lb-open {
 }
 
 .site-footer {
+  box-sizing: border-box;
   max-width: 1100px;
   margin: 0 auto;
   padding: 30px 20px 34px;
